@@ -35,9 +35,9 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nuestros servicios</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Comprehensive accounting solutions tailored to meet your business needs
+              Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.
             </p>
           </div>
 
@@ -45,11 +45,11 @@ export default function HomePage() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Calculator className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Tax Preparation</CardTitle>
+                <CardTitle>Contabilidad y obligaciones fiscales</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Expert tax preparation and planning services to maximize your savings and ensure compliance.
+                  Consiste en elaborar cada mes la contabilidad del Cliente, cumpliendo con ello obligaciones de tipo fiscal y mercantil.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -57,11 +57,11 @@ export default function HomePage() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <TrendingUp className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Financial Planning</CardTitle>
+                <CardTitle>Consultoría contable y fiscal</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Strategic financial planning to help your business achieve long-term growth and stability.
+                  Acompañar y supervisar al departamento de contabilidad del Cliente en la elaboración de la contabilidad.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -69,11 +69,11 @@ export default function HomePage() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Audit & Assurance</CardTitle>
+                <CardTitle>Auditoría electrónica</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Thorough audit services to ensure accuracy and compliance with financial regulations.
+                  Revisión y verificación de manera analítica y con un alcance del 100%.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -81,11 +81,11 @@ export default function HomePage() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Business Consulting</CardTitle>
+                <CardTitle>Nómina y obligaciones laborales</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Expert business consulting to optimize operations and drive sustainable growth.
+                  Consiste en la elaboración de la nóminas de sueldos del Cliente cumpliendo con las disposiciones de la Ley.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -98,7 +98,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Choose Our Firm?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Nuestra firma</h2>
               <p className="text-lg text-slate-600 mb-8">
                 With over 20 years of experience, we provide reliable, professional accounting services that help
                 businesses thrive in today's competitive market.
@@ -108,62 +108,61 @@ export default function HomePage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900">Certified Professionals</h3>
-                    <p className="text-slate-600">Our team consists of certified CPAs with extensive experience.</p>
+                    <h3 className="font-semibold text-slate-900">Longevidad</h3>
+                    <p className="text-slate-600">Desde el año 1953 y a través de tres generaciones, hemos estado apoyando de manera ininterrumpida a las PYMES y a los emprendedores de la región.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900">Personalized Service</h3>
-                    <p className="text-slate-600">We tailor our services to meet your specific business needs.</p>
+                    <h3 className="font-semibold text-slate-900">Expertise</h3>
+                    <p className="text-slate-600">Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900">Technology-Driven</h3>
-                    <p className="text-slate-600">We use the latest accounting software and tools for efficiency.</p>
+                    <h3 className="font-semibold text-slate-900">Empatía</h3>
+                    <p className="text-slate-600">Entendemos el entorno, las necesidades, posibilidades y las oportunidades de las empresas y sus empresarios más allá del ambiente contable y fiscal</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900">Proactive Approach</h3>
+                    <h3 className="font-semibold text-slate-900">PCapital humano</h3>
                     <p className="text-slate-600">
-                      We identify opportunities and potential issues before they impact your business.
-                    </p>
+                      Nuestro equipo de trabajo está en constante capacitación y tiene el compromiso con la creación de valor y la perdurabilidad de las empresas a través de la prestación de nuestros servicios.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Get Started Today</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Contáctanos</h3>
               <p className="text-slate-600 mb-6">
-                Ready to take your business finances to the next level? Contact us for a free consultation.
+                Listo? Contáctanos sin compromiso..
               </p>
 
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-blue-600" />
-                  <span className="text-slate-700">(555) 123-4567</span>
+                  <span className="text-slate-700">(667)752-0080</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-blue-600" />
-                  <span className="text-slate-700">info@accountingfirm.com</span>
+                  <span className="text-slate-700">asistente@contadoressca.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-blue-600" />
-                  <span className="text-slate-700">123 Business Ave, Suite 100</span>
+                  <span className="text-slate-700">Juan José Ríos 378 Pte. Culiacán, Sinaloa</span>
                 </div>
               </div>
 
               <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
-                <Link href="/contact">Schedule Consultation</Link>
+                <Link href="/contact">Agendar</Link>
               </Button>
             </div>
           </div>
@@ -173,12 +172,12 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Grow Your Business?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Listo?</h2>
           <p className="text-xl mb-8 text-blue-100">
-            Let our expert team handle your finances while you focus on what you do best.
+            Nuestro equipo se encargará de cubrir tus necesidades.
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
-            <Link href="/contact">Contact Us Today</Link>
+            <Link href="/contact">Contáctanos</Link>
           </Button>
         </div>
       </section>
