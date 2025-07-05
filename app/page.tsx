@@ -89,6 +89,19 @@ export default function HomePage() {
                 </CardDescription>
               </CardContent>
             </Card>
+            
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>Asesoría financiera</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Aplicación de técnicas de análisis financiero a su información con el fin de convertir este análisis en conocimiento útil.
+                </CardDescription>
+              </CardContent>
+            </Card>
+            
           </div>
         </div>
       </section>
