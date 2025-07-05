@@ -10,9 +10,9 @@ export function Navigation() {
   const pathname = usePathname()
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Inicio" },
+    { href: "/about", label: "Nosotros" },
+    { href: "/contact", label: "Contáctanos" },
   ]
 
   return (
@@ -39,7 +39,7 @@ export function Navigation() {
               </Link>
             ))}
             <Button className="bg-blue-600 hover:bg-blue-700">
-              <Link href="/contact">Get Quote</Link>
+              <Link href="/contact">Inicio de sesión</Link>
             </Button>
           </nav>
 
