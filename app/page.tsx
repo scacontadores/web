@@ -24,7 +24,7 @@ export default function HomePage() {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
               >
-                <Link href="/about">Learn More</Link>
+                <Link href="/about">Más información</Link>
               </Button>
             </div>
           </div>
