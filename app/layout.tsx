@@ -8,9 +8,8 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SCA Contadore Web",
-  description:
-    "Expert accounting and financial services for businesses. Tax preparation, financial planning, audit services, and business consulting.",
+  title: "SCA Contadore",
+  description: "SCA Contadore",
   generator: "v0.dev",
 };
 
