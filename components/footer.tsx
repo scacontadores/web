@@ -63,8 +63,9 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-slate-300">(667)752-0080</span>
-                <a href="tel:+526677520080">despacho</a>
+                <a href="tel:+526677520080">
+                  <span className="text-slate-300">(667)752-0080</span>                
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
@@ -74,7 +75,9 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
-                <span className="text-slate-300">Juan José Ríos 378 Pte.</span>
+                <a href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17">
+                  <span className="text-slate-300">Juan José Ríos 378 Pte.</span>
+                </a>
               </div>
             </div>
           </div>
