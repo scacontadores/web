@@ -22,7 +22,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Calculator className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold text-slate-900">AccountPro</span>
+            <span className="text-xl font-bold text-slate-900">Contadores SCA</span>
           </Link>
 
           {/* Desktop Navigation */}
