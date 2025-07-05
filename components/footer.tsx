@@ -28,12 +28,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/about" className="text-slate-300 hover:text-white transition-colors">
-                  Nostros
+                  Nosotros
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-slate-300 hover:text-white transition-colors">
-                  Contáctamos
+                  Contáctanos
                 </Link>
               </li>
             </ul>
@@ -63,11 +63,14 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-slate-300">(667)144-0455</span>
+                <span className="text-slate-300">(667)752-0080</span>
+                <a href="tel:+526677520080">despacho</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-slate-300">administracion@contadoressca.com</span>
+                <a href="mailto:administracion@contadoressca.com">
+                  <span className="text-slate-300">administracion@contadoressca.com</span>
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
