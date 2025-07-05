@@ -75,7 +75,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
-                <a href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17">
+                <a href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17" target="_blank">
                   <span className="text-slate-300">Juan José Ríos 378 Pte.</span>
                 </a>
               </div>
