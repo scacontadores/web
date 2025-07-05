@@ -41,7 +41,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Calculator className="h-12 w-12 text-blue-600 mx-auto mb-4" />
@@ -113,8 +113,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Nuestra firma</h2>
               <p className="text-lg text-slate-600 mb-8">
-                With over 20 years of experience, we provide reliable, professional accounting services that help
-                businesses thrive in today's competitive market.
+                Con más de 40 años de experiencia, brindamos servicios de contabilidad profesionales y confiables que ayudan a las empresas a prosperar en el mercado competitivo actual.
               </p>
 
               <div className="space-y-4">
@@ -145,7 +144,7 @@ export default function HomePage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-slate-900">PCapital humano</h3>
+                    <h3 className="font-semibold text-slate-900">Capital humano</h3>
                     <p className="text-slate-600">
                       Nuestro equipo de trabajo está en constante capacitación y tiene el compromiso con la creación de valor y la perdurabilidad de las empresas a través de la prestación de nuestros servicios.</p>
                   </div>
