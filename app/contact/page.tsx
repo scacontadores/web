@@ -45,7 +45,6 @@ export default function ContactPage() {
             </p>
           </div>
         </div>
-      </section>
 
             {/* Contact Information */}
             <div className="space-y-8">
