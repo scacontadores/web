@@ -10,14 +10,13 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Expert Financial Solutions for Your Business</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Soluciones para su negocio</h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200">
-              Professional accounting services you can trust. We help businesses grow with comprehensive financial
-              management and strategic planning.
+              Servicios de contabilidad profesionales de confianza. Ayudamos a las empresas a crecer con una gestión financiera integral y planificación estratégica.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                <Link href="/contact">Get Free Consultation</Link>
+                <Link href="/contact">Obtenga una consulta</Link>
               </Button>
               <Button
                 size="lg"
@@ -69,7 +68,7 @@ export default function HomePage() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Auditoría electrónica</CardTitle>
+                <CardTitle>Auditoría fiscal electrónica</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
@@ -98,6 +97,54 @@ export default function HomePage() {
               <CardContent>
                 <CardDescription>
                   Aplicación de técnicas de análisis financiero a su información con el fin de convertir este análisis en conocimiento útil.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>Auditoría de estados financieros</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Consiste en emitir una opinión profesional acerca del grado de veracidad que guardan los estados financieros de la empresa que se auditan. 
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>Dictamen de enajenación de acciones</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Consiste en determinar la utilidad fiscal y el pago del impuesto sobre la renta por la venta de acciones.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>Dictamen IMSS</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Consiste en el examen a los movimientos de afiliación de los trabajadores al IMSS. 
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <CardTitle>Devolución de impuestos a favor</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  Consiste obtener de la Autoridad fiscal la devolución de impuestos a favor del cliente 
                 </CardDescription>
               </CardContent>
             </Card>
