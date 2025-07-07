@@ -13,7 +13,7 @@ export function Footer() {
               <span className="text-xl font-bold">SCA Contadores</span>
             </div>
             <p className="text-slate-300 mb-4">
-              Professional accounting services you can trust. Helping businesses grow with expert financial management.
+              Servicios de contabilidad profesionales de confianza. Ayudamos a las empresas a crecer con una gestión financiera experta.
             </p>
           </div>
 
@@ -44,15 +44,11 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2 text-slate-300">
               <li>Asesoría financiera</li>
-              <li>Auditoria de control interno</li>
-              <li>Auditoria de estados financieros</li>
-              <li>Auditoria fiscal electrónica</li>
-              <li>Auditoria para detección de fraudes</li>
-              <li>Consultoría contable y fiscal</li>
+              <li>Auditoría de estados financieros</li>
+              <li>Auditoría fiscal electrónica</li>
               <li>Contabilidad y obligaciones fiscales</li>
               <li>Dictamen de enajenación de acciones</li>
-              <li>Dictamen fiscal</li>
-              <li>Dictamen para efectos del IMSS</li>
+              <li>Dictamen IMSS</li>
               <li>Nómina y obligaciones laborales</li>
             </ul>
           </div>
@@ -76,7 +72,7 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400" />
                 <a href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17" target="_blank">
-                  <span className="text-slate-300">Juan José Ríos 378 Pte.</span>
+                  <span className="text-slate-300">Juan José Ríos 378 Pte. Culiacán, Sinaloa.</span>
                 </a>
               </div>
             </div>
