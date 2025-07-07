@@ -65,7 +65,7 @@ export function Navigation() {
                   </Link>
                 ))}
                 <Button className="bg-blue-600 hover:bg-blue-700 mt-4">
-                  <Link href="/contact">Get Quote</Link>
+                  <Link href="https://scaportal.azurewebsites.net/login" target="_blank">Inicio de sesión</Link>
                 </Button>
               </div>
             </SheetContent>
