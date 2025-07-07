@@ -121,7 +121,6 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-      </section>
 
       {/* Map Section */}
       <section className="py-20 bg-slate-50">
