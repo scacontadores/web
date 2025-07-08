@@ -205,15 +205,35 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-blue-600" />
-                  <span className="text-slate-700">(667)752-0080</span>
+                  <a
+                    href="tel:+526677520080"
+                    className="text-slate-700 hover:underline"
+                  >
+                    (667)752-0080
+                  </a>
                 </div>
+              
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-blue-600" />
-                  <span className="text-slate-700">asistente@contadoressca.com</span>
+                  <a
+                    href="mailto:administracion@contadoressca.com"
+                    className="text-slate-700 hover:underline"
+                  >
+                    administracion@contadoressca.com
+                  </a>
                 </div>
-                <div className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-blue-600" />
-                  <span className="text-slate-700">Juan José Ríos 378 Pte. Culiacán, Sinaloa</span>
+              
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-blue-600 mt-1" />
+                  <a
+                    href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-700 hover:underline"
+                  >
+                    Juan José Ríos 378 Pte.<br />
+                    Culiacán, Sinaloa
+                  </a>
                 </div>
               </div>
 
