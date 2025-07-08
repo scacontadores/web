@@ -65,7 +65,9 @@ export default function ContactPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 font-semibold">(667)752-0080</p>
+                <a href="tel:+526677520080" className="text-slate-700 font-semibold hover:underline">
+                  (667)752-0080
+                </a>
                 <CardDescription>Lunes - Viernes, 9:00 AM - 6:00 PM</CardDescription>
               </CardContent>
             </Card>
@@ -79,7 +81,9 @@ export default function ContactPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 font-semibold">administracion@contadoressca.com</p>
+                <a href="mailto:administracion@contadoressca.com" className="text-slate-700 font-semibold hover:underline">
+                  administracion@contadoressca.com
+                <a/>
                 <CardDescription>Responderemos dentro de 24 horas.</CardDescription>
               </CardContent>
             </Card>
@@ -92,10 +96,16 @@ export default function ContactPage() {
                   <CardTitle>Ubicación de oficinas</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent>
-                <p className="text-slate-700 font-semibold">Juan José Ríos 378 Pte.</p>
-                <p className="text-slate-700 font-semibold">Colonia Jorge Almada</p>
-                <p className="text-slate-700 font-semibold">Culiacán, Sinaloa</p>
+             <CardContent>
+                <a href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="text-slate-700 font-semibold hover:underline block"
+                >
+                  Juan José Ríos 378 Pte.<br />
+                  Colonia Jorge Almada<br />
+                  Culiacán, Sinaloa
+                </a>
               </CardContent>
             </Card>
 
