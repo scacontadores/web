@@ -28,7 +28,7 @@ export default function ClientMap({
 }: ClientMapProps) {
   return (
     <div className={`w-full ${className}`} style={{ height }}>
-      <MapComponent position={position} zoom={zoom} />
+      <MapComponent position={position} zoom={zoom} scrollWheelZoom={false} />
     </div>
   );
 }

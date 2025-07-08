@@ -6,9 +6,14 @@ import "leaflet/dist/leaflet.css";
 interface MapComponentProps {
   position: [number, number];
   zoom: number;
+  scrollWheelZoom: boolean;
 }
 
-export default function MapComponent({ position, zoom }: MapComponentProps) {
+export default function MapComponent({
+  position,
+  zoom,
+  scrollWheelZoom,
+}: MapComponentProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
 
@@ -32,7 +37,9 @@ export default function MapComponent({ position, zoom }: MapComponentProps) {
         });
 
         // Crear el mapa
-        const map = L.map(mapRef.current!).setView(position, zoom);
+        const map = L.map(mapRef.current!, {
+          scrollWheelZoom: scrollWheelZoom,
+        }).setView(position, zoom);
 
         // Agregar capa de tiles
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
