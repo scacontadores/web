@@ -83,8 +83,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                 Se refiere al trato respetuoso, la presentación adecuada y el dominio técnico.
-                 Incluye mantener una actitud proactiva, ofrecer soluciones y actuar con objetividad y diligencia.
+                 Brindamos un trato respetuoso, atención proactiva y soluciones basadas en dominio técnico, actuando siempre con objetividad y diligencia.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -96,8 +95,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  La honestidad y la transparencia son fundamentales para generar confianza con los clientes. Un despacho contable debe actuar siempre
-                  con ética profesional, respetando la confidencialidad y evitando conflictos de interés.
+                  Actuamos con honestidad, ética y transparencia, protegiendo la confidencialidad del cliente y evitando cualquier conflicto de interés.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -109,8 +107,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Cumplir con plazos, normativas fiscales y entregar información precisa son aspectos críticos. La responsabilidad implica asumir
-                  consecuencias y garantizar que el trabajo se realice correctamente.
+                  Cumplimos plazos y normativas, garantizando información precisa y asumiendo con seriedad las consecuencias de nuestro trabajo.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -118,12 +115,12 @@ export default function AboutPage() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <CardTitle>Inovación</CardTitle>
+                <CardTitle>Innovación</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Adoptamos y desarrollamos herramientas tecnológicas de vanguardia para optimizar procesos contables, ofrecer un servicio ágil, preciso
-                  y accesible, que nos permitan brindar a nuestros clientes una experiencia moderna, segura y adaptada a sus necesidades.
+                 Adoptamos y desarrollamos tecnología para agilizar procesos y ofrecer un servicio contable moderno, eficiente y adaptado a las necesidades
+                del cliente.
                 </CardDescription>
               </CardContent>
             </Card>
