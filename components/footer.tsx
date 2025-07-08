@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src="/logo.png"  // Asegúrate de que esté en la carpeta /public
+                src="/logoSCA.png"
                 alt="Logo Contadores SCA"
                 className="h-8 w-8 object-contain"
               />
