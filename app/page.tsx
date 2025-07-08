@@ -223,7 +223,7 @@ export default function HomePage() {
                   </a>
                 </div>
               
-                <div className="flex items-start gap-3">
+                <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-blue-600 mt-1" />
                   <a
                     href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17"
