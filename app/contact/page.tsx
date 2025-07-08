@@ -1,14 +1,21 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
-import { useState } from "react"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
+import ClientMap from "@/components/client-map";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -17,19 +24,21 @@ export default function ContactPage() {
     phone: "",
     company: "",
     message: "",
-  })
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-  }
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -49,9 +58,13 @@ export default function ContactPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 space-y-8">
           <div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Ponte en contacto</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">
+              Ponte en contacto
+            </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Estamos aquí para apoyarte con todas sus necesidades contables y financieras. Contáctanos a través de cualquiera de los siguientes métodos.
+              Estamos aquí para apoyarte con todas sus necesidades contables y
+              financieras. Contáctanos a través de cualquiera de los siguientes
+              métodos.
             </p>
           </div>
 
@@ -65,10 +78,15 @@ export default function ContactPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <a href="tel:+526677520080" className="text-slate-700 font-semibold hover:underline">
+                <a
+                  href="tel:+526677520080"
+                  className="text-slate-700 font-semibold hover:underline"
+                >
                   (667)752-0080
                 </a>
-                <CardDescription>Lunes - Viernes, 9:00 AM - 6:00 PM</CardDescription>
+                <CardDescription>
+                  Lunes - Viernes, 9:00 AM - 6:00 PM
+                </CardDescription>
               </CardContent>
             </Card>
 
@@ -81,10 +99,15 @@ export default function ContactPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <a href="mailto:administracion@contadoressca.com" className="text-slate-700 font-semibold hover:underline">
+                <a
+                  href="mailto:administracion@contadoressca.com"
+                  className="text-slate-700 font-semibold hover:underline"
+                >
                   administracion@contadoressca.com
                 </a>
-                <CardDescription>Responderemos dentro de 24 horas.</CardDescription>
+                <CardDescription>
+                  Responderemos dentro de 24 horas.
+                </CardDescription>
               </CardContent>
             </Card>
 
@@ -96,14 +119,17 @@ export default function ContactPage() {
                   <CardTitle>Ubicación de oficinas</CardTitle>
                 </div>
               </CardHeader>
-             <CardContent>
-                <a href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   className="text-slate-700 font-semibold hover:underline block"
+              <CardContent>
+                <a
+                  href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-700 font-semibold hover:underline block"
                 >
-                  Juan José Ríos 378 Pte.<br />
-                  Colonia Jorge Almada<br />
+                  Juan José Ríos 378 Pte.
+                  <br />
+                  Colonia Jorge Almada
+                  <br />
                   Culiacán, Sinaloa
                 </a>
               </CardContent>
@@ -120,10 +146,12 @@ export default function ContactPage() {
               <CardContent>
                 <div className="space-y-1">
                   <p className="text-slate-700">
-                    <span className="font-semibold">Lunes - Viernes:</span> 9:00 AM - 6:00 PM
+                    <span className="font-semibold">Lunes - Viernes:</span> 9:00
+                    AM - 6:00 PM
                   </p>
                   <p className="text-slate-700">
-                    <span className="font-semibold">Sábado:</span> 9:00 AM - 2:00 PM
+                    <span className="font-semibold">Sábado:</span> 9:00 AM -
+                    2:00 PM
                   </p>
                   <p className="text-slate-700">
                     <span className="font-semibold">Domingo:</span> Cerrado
@@ -139,20 +167,17 @@ export default function ContactPage() {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Visita nuestras oficinas</h2>
-            <p className="text-lg text-slate-600">Estamos convenientemente ubicados céntricamente.</p>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+              Visita nuestras oficinas
+            </h2>
+            <p className="text-lg text-slate-600">
+              Estamos convenientemente ubicados céntricamente.
+            </p>
           </div>
 
-          {/* Placeholder for map */}
-          <div className="bg-slate-200 h-96 rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-12 w-12 text-slate-400 mx-auto mb-4" />
-              <p className="text-slate-600">Google Maps</p>
-              <p className="text-sm text-slate-500">Juan José Ríos 378 Pte. Culiacán, Sinaloa.</p>
-            </div>
-          </div>
+          <ClientMap height="400px" className="shadow-lg" />
         </div>
       </section>
     </div>
-  )
+  );
 }
