@@ -21,7 +21,11 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Calculator className="h-8 w-8 text-blue-600" />
+            <img
+              src="/logoSCA.png"
+              alt="Logo Contadores SCA"
+              className="h-8 w-8 object-contain"
+            />
             <span className="text-xl font-bold text-slate-900">Contadores SCA</span>
           </Link>
 
