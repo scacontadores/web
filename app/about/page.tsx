@@ -83,7 +83,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                 Brindamos un trato respetuoso, atención proactiva y soluciones basadas en dominio técnico, actuando siempre con objetividad y diligencia.
+                 Brindamos un trato respetuoso, atención proactiva y soluciones basadas en dominio técnico, actuando con objetividad y diligencia.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -95,7 +95,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Actuamos con honestidad, ética y transparencia, protegiendo la confidencialidad del cliente y evitando cualquier conflicto de interés.
+                  Actuamos con honestidad, ética y transparencia, protegiendo la confidencialidad del cliente, actuando con imparcialidad y profesionalismo.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -119,7 +119,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                 Adoptamos y desarrollamos tecnología para agilizar procesos y ofrecer un servicio contable moderno, eficiente y adaptado a las necesidades
+                 Desarrollamos tecnología para agilizar procesos y ofrecer un servicio moderno, eficiente y adaptado a las necesidades
                 del cliente.
                 </CardDescription>
               </CardContent>
