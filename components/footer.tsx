@@ -9,9 +9,14 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Calculator className="h-8 w-8 text-blue-400" />
+              <img
+                src="/logo.png"  // Asegúrate de que esté en la carpeta /public
+                alt="Logo Contadores SCA"
+                className="h-8 w-8 object-contain"
+              />
               <span className="text-xl font-bold">Contadores SCA</span>
             </div>
+          </div>
             <p className="text-slate-300 mb-4">
               Servicios de contabilidad profesionales de confianza. Ayudamos a las empresas a crecer con una gestión financiera experta.
             </p>
