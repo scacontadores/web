@@ -232,6 +232,7 @@ export default function HomePage() {
                     className="text-slate-700 hover:underline"
                   >
                     Juan José Ríos 378 Pte.<br />
+                    Colonia Jorge Almada<br />
                     Culiacán, Sinaloa
                   </a>
                 </div>
