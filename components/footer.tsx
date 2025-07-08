@@ -60,19 +60,26 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
                 <a href="tel:+526677520080">
-                  <span className="text-slate-300">(667)752-0080</span>                
+                  <span className="text-slate-300 hover:underline">(667)752-0080</span>                
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
                 <a href="mailto:administracion@contadoressca.com">
-                  <span className="text-slate-300">administracion@contadoressca.com</span>
+                  <span className="text-slate-300 hover:underline">administracion@contadoressca.com</span>
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-blue-400" />
-                <a href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17" target="_blank">
-                  <span className="text-slate-300">Juan José Ríos 378 Pte. Culiacán, Sinaloa.</span>
+          <div className="flex items-center space-x-3">
+            <MapPin className="h-5 w-5 text-blue-400" />
+                <a
+                  href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:underline"
+                >
+                  Juan José Ríos 378 Pte.<br />
+                  Colonia Jorge Almada<br />
+                  Culiacán, Sinaloa.
                 </a>
               </div>
             </div>
