@@ -83,7 +83,7 @@ export default function ContactPage() {
               <CardContent>
                 <a href="mailto:administracion@contadoressca.com" className="text-slate-700 font-semibold hover:underline">
                   administracion@contadoressca.com
-                <a/>
+                </a>
                 <CardDescription>Responderemos dentro de 24 horas.</CardDescription>
               </CardContent>
             </Card>
