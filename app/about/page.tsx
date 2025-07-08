@@ -107,7 +107,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Cumplimos plazos y normativas, garantizando información precisa y asumiendo con seriedad las consecuencias de nuestro trabajo.
+                  Cumplimos plazos y normativas, garantizando información precisa y actualizada, asumiendo con seriedad las consecuencias de nuestro trabajo.
                 </CardDescription>
               </CardContent>
             </Card>
