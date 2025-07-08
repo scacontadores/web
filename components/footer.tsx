@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Calculator className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">SCA Contadores</span>
+              <span className="text-xl font-bold">Contadores SCA</span>
             </div>
             <p className="text-slate-300 mb-4">
               Servicios de contabilidad profesionales de confianza. Ayudamos a las empresas a crecer con una gestión financiera experta.
@@ -79,7 +79,7 @@ export function Footer() {
                 >
                   Juan José Ríos 378 Pte.<br />
                   Colonia Jorge Almada<br />
-                  Culiacán, Sinaloa.
+                  Culiacán, Sinaloa
                 </a>
               </div>
             </div>
