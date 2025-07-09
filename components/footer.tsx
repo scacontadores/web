@@ -17,7 +17,8 @@ export function Footer() {
               <span className="text-xl font-bold">Contadores SCA</span>
             </div>
             <p className="text-slate-300 mb-4">
-              Servicios de contabilidad profesionales de confianza. Ayudamos a las empresas a crecer con una gestión financiera experta.
+              Servicios contables profesionales de confianza.
+              Brindamos apoyo a las empresas para su crecimiento mediante una gestión financiera integral y una planificación estratégica.
             </p>
           </div>
 
