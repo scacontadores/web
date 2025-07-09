@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Servicios contables profesionales de confianza.",
   generator: "v0.dev",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
