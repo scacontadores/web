@@ -24,19 +24,19 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Nuestra historia</h2>
-              <p className="text-lg text-slate-600 mb-6">
+              <p className="text-lg text-slate-600 mb-6 text-justify">
                 Este Despacho fue fundado por el Sr. José Guadalupe Campos Morales con estudios de contador privado y experiencia práctica como administrador
                 de negocios e inicia operaciones en el año de 1953 en el domicilio de Escobedo #248 Pte., colonia Centro, Culiacán, Sinaloa, atendiendo pequeños
                 negocios en el manejo de contabilidad, declaraciones de impuestos y trámites fiscales ante dependencias gubernamentales. En 1962 el Despacho traslada
                 sus operaciones a Juan José Ríos # 368 Pte. Colonia Almada de la misma ciudad e incorpora la participación de sus hijos Ricardo y Héctor
                 (hermanos de Samuel) para darle carácter de negocio familiar; es en el año de 1970 cuando Samuel se integra a este Despacho. 
               </p>
-              <p className="text-lg text-slate-600 mb-6">
+              <p className="text-lg text-slate-600 mb-6 text-justify">
                 Con el fallecimiento de su fundador en 1975, el Despacho transmuta a dos liderazgos, el de Ricardo y Héctor por su parte y el de Samuel, quien 
                 incorpora a esta nueva etapa a sus hermanos Martha Ruth y David. Los servicios que el Despacho ofrecía preponderantemente hasta ese momento 
                 era el de contabilidad a pequeños negocios. 
               </p>
-              <p className="text-lg text-slate-600">
+              <p className="text-lg text-slate-600 text-justify">
                 En marzo de 1979 se formaliza la constitución de Samuel Campos y Asociados, S.C. a través de una Sociedad Civil con el objeto de aglutinar 
                 socios industriales; en 1980 amplía sus instalaciones iniciando la prestación del servicio de asesoría contable y fiscal para empresas de 
                 mayor tamaño y el proceso electrónico de información relativa a elaboración de contabilidades y nóminas generando programas informáticos 
