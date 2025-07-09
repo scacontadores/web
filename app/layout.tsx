@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Contadores SCA Web",
   description:
-    "Servicios de contabilidad profesionales de confianza. Ayudamos a las empresas a crecer con una gestión financiera experta.",
+    "Servicios contables profesionales de confianza. Brindamos apoyo a las empresas para su crecimiento mediante una gestión financiera integral y una planificación estratégica.",
   generator: "v0.dev",
 };
 
