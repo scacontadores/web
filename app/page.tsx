@@ -12,7 +12,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Soluciones para su negocio</h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200 text-center">
-              Servicios contables profesionales de confianza.</br>
+              Servicios contables profesionales de confianza.<br />
               Brindamos apoyo a las empresas para su crecimiento mediante una gestión financiera integral y una planificación estratégica.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
