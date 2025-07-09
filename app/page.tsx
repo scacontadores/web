@@ -12,7 +12,8 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Soluciones para su negocio</h1>
             <p className="text-xl md:text-2xl mb-8 text-slate-200">
-              Servicios de contabilidad profesionales de confianza. Ayudamos a las empresas a crecer con una gestión financiera integral y planificación estratégica.
+              Servicios contables profesionales de confianza.
+              Brindamos apoyo a las empresas para su crecimiento mediante una gestión financiera integral y una planificación estratégica.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
@@ -36,7 +37,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nuestros servicios</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.
+              Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y de auditoría.
             </p>
           </div>
 
@@ -48,7 +49,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Consiste en elaborar cada mes la contabilidad del Cliente, cumpliendo con ello obligaciones de tipo fiscal y mercantil.
+                  Elaboración de contabilidad mensual del Cliente para el cumplimiento de obligaciones fiscales y mercantiles.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -60,7 +61,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Acompañar y supervisar al departamento de contabilidad del Cliente en la elaboración de la contabilidad.
+                  Acompañamiento y supervisión al departamento de contabilidad del Cliente en la ejecución de la misma.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -72,7 +73,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Revisión y verificación de manera analítica y con un alcance del 100%.
+                  Revisión y verificación analítica con un alcance total del 100%.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -84,7 +85,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Consiste en la elaboración de la nóminas de sueldos del Cliente cumpliendo con las disposiciones de la Ley.
+                  Elaboración de nóminas de sueldos del Cliente ​​en estricta conformidad con las disposiciones legales aplicables.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -96,7 +97,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Aplicación de técnicas de análisis financiero a su información con el fin de convertir este análisis en conocimiento útil.
+                  Aplicación de técnicas de análisis financiero a la información del Cliente, con el objetivo de transformar dicho análisis en conocimiento práctico y valioso.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -108,7 +109,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Consiste en emitir una opinión profesional acerca del grado de veracidad que guardan los estados financieros de la empresa que se auditan. 
+                  Emisión de opiniones profesionales acerca de la fiabilidad de los estados financieros de la empresa auditada.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -120,7 +121,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Consiste en determinar la utilidad fiscal y el pago del impuesto sobre la renta por la venta de acciones.
+                  Determinación de la utilidad fiscal y cálculo del Impuesto sobre la Renta derivado de la venta de acciones.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -132,7 +133,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Consiste en el examen a los movimientos de afiliación de los trabajadores al IMSS. 
+                  Análisis de los movimientos de afiliación de los trabajadores al IMSS.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -144,7 +145,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Consiste obtener de la Autoridad fiscal la devolución de impuestos a favor del cliente 
+                  Gestión ante la Autoridad Fiscal para la obtención de la devolución de impuestos a favor del Cliente.
                 </CardDescription>
               </CardContent>
             </Card>
