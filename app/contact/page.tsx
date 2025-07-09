@@ -171,7 +171,7 @@ export default function ContactPage() {
               Visita nuestras oficinas
             </h2>
             <p className="text-lg text-slate-600">
-              Estamos convenientemente ubicados céntricamente.
+              Ubicados en el centro de la ciudad.
             </p>
           </div>
 
