@@ -11,8 +11,8 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Soluciones para su negocio</h1>
-            <p className="text-xl md:text-2xl mb-8 text-slate-200">
-              Servicios contables profesionales de confianza.
+            <p className="text-xl md:text-2xl mb-8 text-slate-200 text-center">
+              Servicios contables profesionales de confianza.</br>
               Brindamos apoyo a las empresas para su crecimiento mediante una gestión financiera integral y una planificación estratégica.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -160,7 +160,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Nuestra firma</h2>
-              <p className="text-lg text-slate-600 mb-8">
+              <p className="text-lg text-slate-600 mb-8 text-justify">
                 Con más de 40 años de experiencia, brindamos servicios de contabilidad profesionales y confiables que ayudan a las empresas a prosperar en el mercado competitivo actual.
               </p>
 
@@ -169,7 +169,7 @@ export default function HomePage() {
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900">Longevidad</h3>
-                    <p className="text-slate-600">Desde el año 1953 y a través de tres generaciones, hemos estado apoyando de manera ininterrumpida a las PYMES y a los emprendedores de la región.</p>
+                    <p className="text-slate-600 text-justify">Desde el año 1953 y a través de tres generaciones, hemos estado apoyando de manera ininterrumpida a las PYMES y a los emprendedores de la región.</p>
                   </div>
                 </div>
 
@@ -177,7 +177,7 @@ export default function HomePage() {
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900">Expertise</h3>
-                    <p className="text-slate-600">Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.</p>
+                    <p className="text-slate-600 text-justify">Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.</p>
                   </div>
                 </div>
 
@@ -185,7 +185,7 @@ export default function HomePage() {
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900">Empatía</h3>
-                    <p className="text-slate-600">Entendemos el entorno, las necesidades, posibilidades y las oportunidades de las empresas y sus empresarios más allá del ambiente contable y fiscal</p>
+                    <p className="text-slate-600 text-justify">Entendemos el entorno, las necesidades, posibilidades y las oportunidades de las empresas y sus empresarios más allá del ambiente contable y fiscal</p>
                   </div>
                 </div>
 
@@ -193,7 +193,7 @@ export default function HomePage() {
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900">Capital humano</h3>
-                    <p className="text-slate-600">
+                    <p className="text-slate-600 text-justify">
                       Nuestro equipo de trabajo está en constante capacitación y tiene el compromiso con la creación de valor y la perdurabilidad de las empresas a través de la prestación de nuestros servicios.</p>
                   </div>
                 </div>
