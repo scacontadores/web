@@ -8,74 +8,90 @@ import {
   Users,
   FileText,
   PieChart,
+  Building,
+  CreditCard,
+  BookOpen,
+  Target,
 } from "lucide-react"
 
-export default function ServicesPage() {
-  const services = [
-    {
-      icon: <Calculator className="h-10 w-10 text-blue-600" />,
-      title: "Contabilidad y obligaciones fiscales",
-      description: "Cumplimiento contable y fiscal mensual.",
-      href: "/services/contabilidad",
-    },
-    {
-      icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
-      title: "Consultoría contable y fiscal",
-      description: "Supervisión estratégica del área contable.",
-      href: "/services/consultoria",
-    },
-    {
-      icon: <Shield className="h-10 w-10 text-blue-600" />,
-      title: "Auditoría fiscal electrónica",
-      description: "Revisión analítica con alcance del 100%.",
-      href: "/services/auditoria-fiscal",
-    },
-    {
-      icon: <Users className="h-10 w-10 text-blue-600" />,
-      title: "Nómina y obligaciones laborales",
-      description: "Cálculo y emisión de nóminas conforme a ley.",
-      href: "/services/nomina",
-    },
-    {
-      icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
-      title: "Asesoría financiera",
-      description: "Análisis e interpretación financiera aplicada.",
-      href: "/services/asesoria-financiera",
-    },
-    {
-      icon: <Shield className="h-10 w-10 text-blue-600" />,
-      title: "Auditoría de estados financieros",
-      description: "Opinión profesional sobre estados auditados.",
-      href: "/services/auditoria-financiera",
-    },
-    {
-      icon: <Calculator className="h-10 w-10 text-blue-600" />,
-      title: "Dictamen de enajenación de acciones",
-      description: "Cálculo de utilidad fiscal y ISR por venta de acciones.",
-      href: "/services/dictamen-acciones",
-    },
-    {
-      icon: <Users className="h-10 w-10 text-blue-600" />,
-      title: "Dictamen IMSS",
-      description: "Análisis de afiliaciones ante el IMSS.",
-      href: "/services/dictamen-imss",
-    },
-    {
-      icon: <FileText className="h-10 w-10 text-blue-600" />,
-      title: "Devolución de impuestos a favor",
-      description: "Gestión de devoluciones ante la autoridad fiscal.",
-      href: "/services/devolucion-impuestos",
-    },
-  ]
+const services = [
+  {
+    icon: <Calculator className="h-10 w-10 text-blue-600" />,
+    title: "Contabilidad y obligaciones fiscales",
+    description: "Elaboración de contabilidad mensual del Cliente para el cumplimiento de obligaciones fiscales y mercantiles.",
+    href: "/services/contabilidad",
+  },
+  {
+    icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
+    title: "Consultoría contable y fiscal",
+    description: "Acompañamiento y supervisión al departamento de contabilidad del Cliente en la ejecución de la misma.",
+    href: "/services/consultoria",
+  },
+  {
+    icon: <Shield className="h-10 w-10 text-blue-600" />,
+    title: "Auditoría fiscal electrónica",
+    description: "Revisión y verificación analítica con un alcance total del 100%.",
+    href: "/services/auditoria-fiscal",
+  },
+  {
+    icon: <Users className="h-10 w-10 text-blue-600" />,
+    title: "Nómina y obligaciones laborales",
+    description: "Elaboración de nóminas de sueldos del Cliente en conformidad con las disposiciones legales aplicables.",
+    href: "/services/nomina",
+  },
+  {
+    icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
+    title: "Asesoría financiera",
+    description: "Aplicación de técnicas de análisis financiero con el objetivo de generar conocimiento práctico y valioso.",
+    href: "/services/asesoria-financiera",
+  },
+  {
+    icon: <Shield className="h-10 w-10 text-blue-600" />,
+    title: "Auditoría de estados financieros",
+    description: "Opinión profesional acerca de la fiabilidad de los estados financieros de la empresa auditada.",
+    href: "/services/auditoria-financiera",
+  },
+  {
+    icon: <Calculator className="h-10 w-10 text-blue-600" />,
+    title: "Dictamen de enajenación de acciones",
+    description: "Determinación de la utilidad fiscal e ISR derivado de la venta de acciones.",
+    href: "/services/enajenacion",
+  },
+  {
+    icon: <Users className="h-10 w-10 text-blue-600" />,
+    title: "Dictamen IMSS",
+    description: "Análisis de los movimientos de afiliación de los trabajadores al IMSS.",
+    href: "/services/imss",
+  },
+  {
+    icon: <Calculator className="h-10 w-10 text-blue-600" />,
+    title: "Devolución de impuestos a favor",
+    description: "Gestión ante la Autoridad Fiscal para la obtención de la devolución de impuestos a favor del Cliente.",
+    href: "/services/devolucion",
+  },
+]
 
+const industries = [
+  { name: "Salud", icon: Building },
+  { name: "Bienes raíces", icon: Building },
+  { name: "Tecnología", icon: Target },
+  { name: "Manufactura", icon: Building },
+  { name: "Retail", icon: CreditCard },
+  { name: "Servicios profesionales", icon: Users },
+  { name: "Organizaciones sin fines de lucro", icon: BookOpen },
+  { name: "Construcción", icon: Building },
+]
+
+export default function ServiciosPage() {
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Servicios */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-slate-900 mb-4">Nuestros servicios</h1>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Conozca los servicios que ofrecemos para acompañar su crecimiento empresarial.
+              Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.
             </p>
           </div>
 
@@ -84,14 +100,76 @@ export default function ServicesPage() {
               <Link
                 key={idx}
                 href={svc.href}
-                className="border rounded-lg p-6 hover:shadow-md transition block text-slate-800"
+                className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col justify-between h-full"
               >
-                <div className="flex justify-between items-center mb-4">
-                  <h2 className="text-xl font-semibold">{svc.title}</h2>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="text-xl font-semibold text-slate-900 mb-2">{svc.title}</h3>
+                    <p className="text-slate-600 text-sm">{svc.description}</p>
+                  </div>
                   {svc.icon}
                 </div>
-                <p className="text-slate-600">{svc.description}</p>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Proceso */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nuestro proceso</h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Así trabajamos para brindarte resultados excepcionales
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              "Consulta inicial",
+              "Propuesta personalizada",
+              "Implementación",
+              "Soporte continuo",
+            ].map((title, idx) => (
+              <div className="text-center" key={idx}>
+                <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                  {idx + 1}
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">{title}</h3>
+                <p className="text-slate-600">
+                  {[
+                    "Nos reunimos para entender tus necesidades y situación financiera actual.",
+                    "Creamos un plan de servicios con precios y tiempos transparentes.",
+                    "Ejecutamos el plan con comunicación y actualizaciones constantes.",
+                    "Brindamos soporte y asesoría estratégica continua.",
+                  ][idx]}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sectores */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Sectores con los que trabajamos</h2>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Tenemos amplia experiencia colaborando con empresas de diversas industrias
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {industries.map((industry, index) => (
+              <div
+                key={index}
+                className="text-center p-6 border rounded-lg hover:shadow-md transition-shadow"
+              >
+                <industry.icon className="h-8 w-8 text-blue-600 mx-auto mb-3" />
+                <h3 className="font-semibold text-slate-900">{industry.name}</h3>
+              </div>
             ))}
           </div>
         </div>
