@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+"use client"
+
+import ServiceCard from "@/components/ServiceCard"
 import {
   Calculator,
   TrendingUp,
@@ -12,236 +12,191 @@ import {
   CreditCard,
   BookOpen,
   Target,
-  CheckCircle,
-  ArrowRight,
 } from "lucide-react"
-import Link from "next/link"
 
-export default function ServicesPage() {
+export default function ServiciosPage() {
   const services = [
     {
-      icon: Calculator,
-      title: "Tax Preparation & Planning",
-      description: "Comprehensive tax services for individuals and businesses",
-      features: [
-        "Individual tax returns",
-        "Corporate tax preparation",
-        "Tax planning strategies",
-        "IRS representation",
-        "Quarterly tax estimates",
-        "Multi-state tax filing",
-      ],
-      popular: true,
-    },
-    {
-      icon: TrendingUp,
-      title: "Financial Planning & Analysis",
-      description: "Strategic financial guidance to help your business grow",
-      features: [
-        "Cash flow analysis",
-        "Budget planning & forecasting",
-        "Financial statement analysis",
-        "Investment planning",
-        "Retirement planning",
-        "Risk assessment",
+      icon: <Calculator className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Contabilidad y obligaciones fiscales",
+      description:
+        "Elaboración de contabilidad mensual del Cliente para el cumplimiento de obligaciones fiscales y mercantiles.",
+      faqs: [
+        "¿Cada cuándo debo presentar mis declaraciones fiscales?",
+        "¿Qué documentos necesito para cumplir con mis obligaciones contables?",
+        "¿Ofrecen contabilidad electrónica?",
       ],
     },
     {
-      icon: Shield,
-      title: "Audit & Assurance Services",
-      description: "Independent verification of your financial statements",
-      features: [
-        "Financial statement audits",
-        "Internal control reviews",
-        "Compliance audits",
-        "Agreed-upon procedures",
-        "Review engagements",
-        "Fraud investigation",
+      icon: <TrendingUp className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Consultoría contable y fiscal",
+      description:
+        "Acompañamiento y supervisión al departamento de contabilidad del Cliente en la ejecución de la misma.",
+      faqs: [
+        "¿Incluye revisiones mensuales?",
+        "¿Puedo solicitar asesorías por proyecto?",
       ],
     },
     {
-      icon: Users,
-      title: "Business Consulting",
-      description: "Expert advice to optimize your business operations",
-      features: [
-        "Business valuation",
-        "Merger & acquisition support",
-        "Strategic planning",
-        "Process improvement",
-        "Technology consulting",
-        "Succession planning",
+      icon: <Shield className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Auditoría fiscal electrónica",
+      description:
+        "Revisión y verificación analítica con un alcance total del 100%.",
+      faqs: [
+        "¿Qué incluye una auditoría electrónica?",
+        "¿Revisan todos los XML?",
       ],
     },
     {
-      icon: FileText,
-      title: "Bookkeeping Services",
-      description: "Accurate record-keeping for your business transactions",
-      features: [
-        "Monthly bookkeeping",
-        "Accounts payable/receivable",
-        "Bank reconciliation",
-        "Financial reporting",
-        "Payroll processing",
-        "QuickBooks setup & training",
+      icon: <Users className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Nómina y obligaciones laborales",
+      description:
+        "Elaboración de nóminas de sueldos del Cliente en conformidad con las disposiciones legales aplicables.",
+      faqs: [
+        "¿También calculan cuotas IMSS e INFONAVIT?",
+        "¿Ofrecen soporte ante inspecciones laborales?",
       ],
     },
     {
-      icon: PieChart,
-      title: "Management Reporting",
-      description: "Detailed insights into your business performance",
-      features: [
-        "Monthly financial statements",
-        "Key performance indicators",
-        "Dashboard creation",
-        "Variance analysis",
-        "Profitability analysis",
-        "Custom reporting solutions",
+      icon: <TrendingUp className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Asesoría financiera",
+      description:
+        "Aplicación de técnicas de análisis financiero con el objetivo de generar conocimiento práctico y valioso.",
+      faqs: [
+        "¿Realizan análisis de estados financieros?",
+        "¿Pueden ayudarme a estructurar un plan de inversión?",
+      ],
+    },
+    {
+      icon: <Shield className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Auditoría de estados financieros",
+      description:
+        "Opinión profesional acerca de la fiabilidad de los estados financieros de la empresa auditada.",
+      faqs: [
+        "¿Entregan dictamen con firma de auditor?",
+        "¿Incluye carta de recomendaciones?",
+      ],
+    },
+    {
+      icon: <Calculator className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Dictamen de enajenación de acciones",
+      description:
+        "Determinación de la utilidad fiscal e ISR derivado de la venta de acciones.",
+      faqs: [
+        "¿Qué documentos necesito para este dictamen?",
+        "¿Cuánto tarda el proceso?",
+      ],
+    },
+    {
+      icon: <Users className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Dictamen IMSS",
+      description:
+        "Análisis de los movimientos de afiliación de los trabajadores al IMSS.",
+      faqs: [
+        "¿El dictamen es obligatorio?",
+        "¿Incluye revisión de SUA?",
+      ],
+    },
+    {
+      icon: <Calculator className="h-12 w-12 text-blue-600 mx-auto" />,
+      title: "Devolución de impuestos a favor",
+      description:
+        "Gestión ante la Autoridad Fiscal para la obtención de la devolución de impuestos a favor del Cliente.",
+      faqs: [
+        "¿Qué requisitos necesito?",
+        "¿Cuánto tiempo tarda la devolución?",
       ],
     },
   ]
 
   const industries = [
-    { name: "Healthcare", icon: Building },
-    { name: "Real Estate", icon: Building },
-    { name: "Technology", icon: Target },
-    { name: "Manufacturing", icon: Building },
+    { name: "Salud", icon: Building },
+    { name: "Bienes raíces", icon: Building },
+    { name: "Tecnología", icon: Target },
+    { name: "Manufactura", icon: Building },
     { name: "Retail", icon: CreditCard },
-    { name: "Professional Services", icon: Users },
-    { name: "Non-Profit", icon: BookOpen },
-    { name: "Construction", icon: Building },
+    { name: "Servicios profesionales", icon: Users },
+    { name: "Organizaciones sin fines de lucro", icon: BookOpen },
+    { name: "Construcción", icon: Building },
   ]
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-            <p className="text-xl text-slate-200 mb-8">
-              Comprehensive accounting and financial services tailored to your business needs
-            </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              <Link href="/contact">Get Free Consultation</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
+      {/* Servicios */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">What We Offer</h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              From tax preparation to strategic planning, we provide the full spectrum of accounting services
+            <h1 className="text-4xl font-bold text-slate-900 mb-4">Nuestros servicios</h1>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="relative hover:shadow-lg transition-shadow h-full">
-                {service.popular && (
-                  <Badge className="absolute -top-2 -right-2 bg-blue-600 text-white">Most Popular</Badge>
-                )}
-                <CardHeader>
-                  <service.icon className="h-12 w-12 text-blue-600 mb-4" />
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
-                  <CardDescription className="text-base">{service.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600 mt-1 flex-shrink-0" />
-                        <span className="text-slate-600 text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+            {services.map((svc, idx) => (
+              <ServiceCard
+                key={idx}
+                title={svc.title}
+                description={svc.description}
+                icon={svc.icon}
+                faqs={svc.faqs}
+              />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Proceso */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nuestro proceso</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              How we work with you to deliver exceptional results
+              Así trabajamos para brindarte resultados excepcionales
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                1
+            {["Consulta inicial", "Propuesta personalizada", "Implementación", "Soporte continuo"].map((title, idx) => (
+              <div className="text-center" key={idx}>
+                <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                  {idx + 1}
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">{title}</h3>
+                <p className="text-slate-600">
+                  {[
+                    "Nos reunimos para entender tus necesidades y situación financiera actual.",
+                    "Creamos un plan de servicios con precios y tiempos transparentes.",
+                    "Ejecutamos el plan con comunicación y actualizaciones constantes.",
+                    "Brindamos soporte y asesoría estratégica continua."
+                  ][idx]}
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Initial Consultation</h3>
-              <p className="text-slate-600">
-                We meet to understand your needs, goals, and current financial situation.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                2
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Custom Proposal</h3>
-              <p className="text-slate-600">
-                We create a tailored service plan with transparent pricing and timelines.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                3
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Implementation</h3>
-              <p className="text-slate-600">
-                Our expert team executes the plan with regular updates and communication.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                4
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Ongoing Support</h3>
-              <p className="text-slate-600">
-                We provide continuous support and strategic advice as your business grows.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Industries Section */}
+      {/* Sectores */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Industries We Serve</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Sectores con los que trabajamos</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              We have extensive experience working with businesses across various industries
+              Tenemos amplia experiencia colaborando con empresas de diversas industrias
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {industries.map((industry, index) => (
-              <Card key={index} className="text-center hover:shadow-md transition-shadow">
-                <CardContent className="p-6">
-                  <industry.icon className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-                  <h3 className="font-semibold text-slate-900">{industry.name}</h3>
-                </CardContent>
-              </Card>
+              <div key={index} className="text-center p-6 border rounded-lg hover:shadow-md transition-shadow">
+                <industry.icon className="h-8 w-8 text-blue-600 mx-auto mb-3" />
+                <h3 className="font-semibold text-slate-900">{industry.name}</h3>
+              </div>
             ))}
           </div>
         </div>
       </section>
-
     </div>
   )
 }
