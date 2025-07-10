@@ -1,6 +1,5 @@
 "use client"
 
-import { useParams } from "next/navigation"
 import {
   Calculator,
   TrendingUp,
@@ -8,7 +7,9 @@ import {
   Users,
 } from "lucide-react"
 import { useState } from "react"
+import { notFound } from "next/navigation"
 
+// --- Datos de servicios ---
 const services = [
   {
     slug: "contabilidad",
@@ -19,11 +20,13 @@ const services = [
     faqs: [
       {
         question: "¿Con qué frecuencia debo presentar mi contabilidad?",
-        answer: "La contabilidad debe presentarse de forma mensual ante las autoridades fiscales.",
+        answer:
+          "La contabilidad debe presentarse de forma mensual ante las autoridades fiscales.",
       },
       {
         question: "¿Incluye la elaboración de declaraciones?",
-        answer: "Sí, incluye la elaboración y presentación de declaraciones fiscales correspondientes.",
+        answer:
+          "Sí, incluye la elaboración y presentación de declaraciones fiscales correspondientes.",
       },
     ],
   },
@@ -36,25 +39,54 @@ const services = [
     faqs: [
       {
         question: "¿Pueden revisar mi contabilidad interna?",
-        answer: "Sí, ofrecemos supervisión para asegurar que el trabajo contable cumpla con normativas.",
+        answer:
+          "Sí, ofrecemos supervisión para asegurar que el trabajo contable cumpla con normativas.",
       },
     ],
   },
-  // Puedes añadir más servicios con sus respectivas FAQs aquí...
+  {
+    slug: "auditoria-fiscal",
+    title: "Auditoría fiscal electrónica",
+    icon: Shield,
+    description:
+      "Revisión y verificación analítica con un alcance total del 100%.",
+    faqs: [
+      {
+        question: "¿Qué incluye una auditoría electrónica?",
+        answer: "Incluye la revisión del 100% de los XML y pólizas contables.",
+      },
+    ],
+  },
+  {
+    slug: "nomina",
+    title: "Nómina y obligaciones laborales",
+    icon: Users,
+    description:
+      "Elaboración de nóminas de sueldos del Cliente en conformidad con las disposiciones legales aplicables.",
+    faqs: [
+      {
+        question: "¿También calculan cuotas IMSS e INFONAVIT?",
+        answer:
+          "Sí, calculamos y timbramos todo lo relacionado a seguridad social y obligaciones laborales.",
+      },
+    ],
+  },
 ]
 
-export default function ServiceDetailPage() {
-  const { slug } = useParams()
-  const service = services.find((s) => s.slug === slug)
+// --- SSG para output: export ---
+export function generateStaticParams() {
+  return services.map(({ slug }) => ({ slug }))
+}
+
+interface PageProps {
+  params: { slug: string }
+}
+
+export default function ServiceDetailPage({ params }: PageProps) {
+  const service = services.find((s) => s.slug === params.slug)
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
 
-  if (!service) {
-    return (
-      <div className="container mx-auto px-4 py-20 text-center">
-        <h1 className="text-3xl font-bold text-slate-900">Servicio no encontrado</h1>
-      </div>
-    )
-  }
+  if (!service) return notFound()
 
   const Icon = service.icon
 
@@ -62,17 +94,25 @@ export default function ServiceDetailPage() {
     <div className="flex flex-col min-h-screen">
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Encabezado */}
           <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-8 mb-12">
             <div>
-              <h1 className="text-4xl font-bold text-slate-900 mb-4">{service.title}</h1>
-              <p className="text-lg text-slate-600 max-w-xl">{service.description}</p>
+              <h1 className="text-4xl font-bold text-slate-900 mb-4">
+                {service.title}
+              </h1>
+              <p className="text-lg text-slate-600 max-w-xl">
+                {service.description}
+              </p>
             </div>
             <Icon className="h-16 w-16 text-blue-600" />
           </div>
 
-          {service.faqs && (
+          {/* Preguntas frecuentes */}
+          {service.faqs && service.faqs.length > 0 && (
             <div className="mt-12">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-6">Preguntas frecuentes</h2>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-6">
+                Preguntas frecuentes
+              </h2>
               <div className="space-y-4">
                 {service.faqs.map((faq, idx) => (
                   <div key={idx} className="border rounded-lg p-4">
