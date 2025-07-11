@@ -23,7 +23,7 @@ export default function FAQSection({ faqs }: { faqs: FAQ[] }) {
               {faq.question}
             </button>
             {openFAQ === idx && (
-              <p className="mt-2 text-slate-600">{faq.answer}</p>
+              <p className="mt-2 text-slate-600 text-justify">{faq.answer}</p>
             )}
           </div>
         ))}
