@@ -6,9 +6,9 @@ import Link from "next/link"
 export default function NotFound() {
   const quickLinks = [
     { href: "/", label: "Inicio", icon: Home },
-    { href: "/services", label: "Our Services", icon: Calculator },
-    { href: "/about", label: "About Us", icon: Search },
-    { href: "/contact", label: "Contact Us", icon: Phone },
+    { href: "/about", label: "Nosotros", icon: Search },    
+    { href: "/services", label: "Servicios", icon: Calculator },
+    { href: "/contact", label: "Contáctanos", icon: Phone },
   ]
 
   return (
@@ -33,7 +33,7 @@ export default function NotFound() {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 <Link href="/" className="flex items-center gap-2">
                   <ArrowLeft className="h-4 w-4" />
-                  Regreso al Inicio
+                  Inicio
                 </Link>
               </Button>
               <Button
