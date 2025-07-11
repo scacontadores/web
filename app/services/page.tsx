@@ -86,25 +86,24 @@ export default function ServiciosPage() {
       {/* Servicios */}
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center">
+          <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Nuestros servicios</h1>
             <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
               Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.
             </p>
           </div>
-        </div>
-
+      
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((svc, idx) => (
               <Link
                 key={idx}
                 href={svc.href}
-                className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col justify-between h-full"
+                className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col justify-between h-full bg-white text-slate-900"
               >
                 <div className="flex justify-between items-start">
                   <div>
-                    <h3 className="text-xl font-semibold text-slate-900 mb-2">{svc.title}</h3>
-                    <p className="text-slate-600 text-sm">{svc.description}</p>
+                    <h3 className="text-xl font-semibold mb-2">{svc.title}</h3>
+                    <p className="text-sm text-slate-600">{svc.description}</p>
                   </div>
                   {svc.icon}
                 </div>
