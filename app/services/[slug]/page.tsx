@@ -186,16 +186,16 @@ export default function ServiceDetailPage({ params }: PageProps) {
           {/* Botones */}
           <div className="mt-12 text-center">
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="/services">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md">
-                  ← Servicios
-                </button>
-              </a>
               <a href="/">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md min-w-[160px]">
                   ← Inicio
                 </button>
-              </a>
+              </a>              
+              <a href="/services">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md min-w-[160px]">
+                  ← Servicios
+                </button>
+              </a>         
             </div>
           </div>
         </div>
@@ -203,4 +203,3 @@ export default function ServiceDetailPage({ params }: PageProps) {
     </div>
   )
 }
-
