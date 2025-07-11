@@ -37,6 +37,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/services" className="text-slate-300 hover:text-white transition-colors">
+                  Servicios
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-slate-300 hover:text-white transition-colors">
                   Contáctanos
                 </Link>
@@ -48,13 +53,41 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2 text-slate-300">
-              <li>Asesoría financiera</li>
-              <li>Auditoría de estados financieros</li>
-              <li>Auditoría fiscal electrónica</li>
-              <li>Contabilidad y obligaciones fiscales</li>
-              <li>Dictamen de enajenación de acciones</li>
-              <li>Dictamen IMSS</li>
-              <li>Nómina y obligaciones laborales</li>
+              <li>
+                <Link href="/services/asesoria-financiera" className="hover:text-white transition-colors">
+                  Asesoría financiera
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/auditoria-eeff" className="hover:text-white transition-colors">
+                  Auditoría de estados financieros
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/auditoria-fiscal" className="hover:text-white transition-colors">
+                  Auditoría fiscal electrónica
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/contabilidad" className="hover:text-white transition-colors">
+                  Contabilidad y obligaciones fiscales
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/dictamen-acciones" className="hover:text-white transition-colors">
+                  Dictamen de enajenación de acciones
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/dictamen-imss" className="hover:text-white transition-colors">
+                  Dictamen IMSS
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/nomina" className="hover:text-white transition-colors">
+                  Nómina y obligaciones laborales
+                </Link>
+              </li>
             </ul>
           </div>
 
