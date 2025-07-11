@@ -69,7 +69,29 @@ const services = [
       },
     ],
   },
+  {
+    slug: "asesoria-financiera",
+    title: "Asesoría financiera",
+    icon: Shield,
+    description:
+      "Aplicación de técnicas de análisis financiero a la información del Cliente, con el objetivo de transformar dicho análisis en conocimiento práctico y valioso.",
+    faqs: [
+      {
+        question: "¿Qué es la asesoría financiera?",
+        answer: "Idania Loaiza",
+      },
+    ],
+  },
 ]
+
+
+
+
+
+
+
+
+
 
 // --- SSG para output: export ---
 export function generateStaticParams() {
