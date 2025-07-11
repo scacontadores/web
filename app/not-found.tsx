@@ -22,10 +22,9 @@ export default function NotFound() {
 
             {/* Error Message */}
             <div className="relative -mt-20 mb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Page Not Found</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Página no encontrada</h1>
               <p className="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
-                Sorry, we couldn't find the page you're looking for. It might have been moved, deleted, or you entered
-                the wrong URL.
+                Lo sentimos, no pudimos encontrar la página que buscas. Es posible que se haya movido, eliminado o que hayas introducido una URL incorrecta.
               </p>
             </div>
 
