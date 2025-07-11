@@ -182,21 +182,25 @@ export default function ServiceDetailPage({ params }: PageProps) {
           {service.faqs && service.faqs.length > 0 && (
             <FAQSection faqs={service.faqs} />
           )}
-            <div className="mt-12 text-center">
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/services">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md">
-                    ← Servicios
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md">
-                    ← Inicio
-                  </button>
-                </a>
-              </div>
+
+          {/* Botones */}
+          <div className="mt-12 text-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a href="/services">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md">
+                  ← Servicios
+                </button>
+              </a>
+              <a href="/">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md">
+                  ← Inicio
+                </button>
+              </a>
             </div>
-          </section>
+          </div>
         </div>
+      </section>
+    </div>
   )
 }
+
