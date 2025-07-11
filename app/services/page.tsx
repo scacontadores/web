@@ -94,6 +94,15 @@ export default function ServiciosPage() {
           </div>
         </div>
       </section>
+
+      {/* Intro Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 space-y-8">
+          <div>
+            <p className="text-lg text-slate-600 mb-8">
+              Selecciona el servicio de tu interés para obtener más información.
+            </p>
+          </div>
       
       {/* Services Cards Section */}
       <section className="py-20 bg-white">
