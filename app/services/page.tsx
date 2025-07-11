@@ -47,25 +47,25 @@ const services = [
     icon: <Shield className="h-10 w-10 text-blue-600" />,
     title: "Auditoría de estados financieros",
     description: "Opinión profesional acerca de la fiabilidad de los estados financieros de la empresa auditada.",
-    href: "/services/auditoria-financiera",
+    href: "/services/auditoria-eeff",
   },
   {
     icon: <Calculator className="h-10 w-10 text-blue-600" />,
     title: "Dictamen de enajenación de acciones",
     description: "Determinación de la utilidad fiscal e ISR derivado de la venta de acciones.",
-    href: "/services/enajenacion",
+    href: "/services/enajenacion-acciones",
   },
   {
     icon: <Users className="h-10 w-10 text-blue-600" />,
     title: "Dictamen IMSS",
     description: "Análisis de los movimientos de afiliación de los trabajadores al IMSS.",
-    href: "/services/imss",
+    href: "/services/dictamen-imss",
   },
   {
     icon: <Calculator className="h-10 w-10 text-blue-600" />,
     title: "Devolución de impuestos a favor",
     description: "Gestión ante la Autoridad Fiscal para la obtención de la devolución de impuestos a favor del Cliente.",
-    href: "/services/devolucion",
+    href: "/services/devolucion-iva",
   },
 ]
 
