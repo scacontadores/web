@@ -171,7 +171,7 @@ export default function ServiceDetailPage({ params }: PageProps) {
               <h1 className="text-4xl font-bold text-slate-900 mb-4">
                 {service.title}
               </h1>
-              <p className="text-lg text-slate-600 max-w-xl">
+              <p className="text-lg text-slate-600 max-w-xl text-justify">
                 {service.description}
               </p>
             </div>
