@@ -103,6 +103,8 @@ export default function ServiciosPage() {
               Selecciona el servicio de tu interés para obtener más información.
             </p>
           </div>
+        </div>    
+      </section>
       
       {/* Services Cards Section */}
       <section className="py-20 bg-white">
@@ -169,7 +171,7 @@ export default function ServiciosPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Sectores con los que trabajamos</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Tenemos amplia experiencia colaborando con empresas de diversas industrias
+              Tenemos amplia experiencia colaborando con empresas de diversas industrias.
             </p>
           </div>
 
