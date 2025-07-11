@@ -14,8 +14,7 @@ const services = [
     title: "Contabilidad y obligaciones fiscales",
     icon: Calculator,
     description:
-      "Este servicio consiste en elaborar cada mes la contabilidad del Cliente, cumpliendo con ello obligaciones de tipo fiscal y mercantil. 
-      Con los datos emanados de la contabilidad se hacen los cálculos y preparación de los formatos fiscales para el cumplimiento de las obligaciones fiscales.",
+      "Este servicio consiste en elaborar cada mes la contabilidad del Cliente, cumpliendo con ello obligaciones de tipo fiscal y mercantil. Con los datos emanados de la contabilidad se hacen los cálculos y preparación de los formatos fiscales para el cumplimiento de las obligaciones fiscales.",
     faqs: [
       {
         question: "¿Cuál es el perfil o características adecuadas de los negocios a los que se orienta el servicio de contabilidad y obligaciones fiscales?",
