@@ -84,14 +84,15 @@ export default function ServiciosPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Servicios */}
-      <section className="py-20 bg-white">
+      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold text-slate-900 mb-4">Nuestros servicios</h1>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Nuestros servicios</h1>
+            <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
               Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.
             </p>
           </div>
+        </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((svc, idx) => (
@@ -119,7 +120,7 @@ export default function ServiciosPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nuestro proceso</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Así trabajamos para brindarte resultados excepcionales
+              Así trabajamos para brindarte resultados excepcionales.
             </p>
           </div>
 
