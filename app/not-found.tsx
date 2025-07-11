@@ -33,7 +33,7 @@ export default function NotFound() {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 <Link href="/" className="flex items-center gap-2">
                   <ArrowLeft className="h-4 w-4" />
-                  Back to Homepage
+                  Regreso al Inicio
                 </Link>
               </Button>
               <Button
@@ -41,7 +41,7 @@ export default function NotFound() {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
               >
-                <Link href="/contact">Contact Support</Link>
+                <Link href="/contact">Soporte</Link>
               </Button>
             </div>
           </div>
@@ -53,9 +53,9 @@ export default function NotFound() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Where would you like to go?</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">¿A dónde te gustaría ir?</h2>
               <p className="text-lg text-slate-600">
-                Here are some popular pages that might help you find what you're looking for
+                Te mostramos otras opciones que podrían ayudarte a encontrar lo que estás buscando.
               </p>
             </div>
 
@@ -83,9 +83,9 @@ export default function NotFound() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Need Help?</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">¿Necesita ayuda?</h2>
               <p className="text-lg text-slate-600">
-                If you're still having trouble finding what you need, don't hesitate to reach out to our team
+                Si aún tiene problemas para encontrar lo que necesita, no dude en comunicarse con nuestro equipo.
               </p>
             </div>
 
@@ -93,14 +93,14 @@ export default function NotFound() {
               <Card className="text-center">
                 <CardHeader>
                   <Phone className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                  <CardTitle>Call Us</CardTitle>
-                  <CardDescription>Speak directly with our team</CardDescription>
+                  <CardTitle>Teléfono</CardTitle>
+                  <CardDescription>Comunícate directamente con nuestro equipo.</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-2xl font-bold text-slate-900 mb-2">(555) 123-4567</p>
-                  <p className="text-slate-600 mb-4">Monday - Friday, 8:00 AM - 6:00 PM</p>
+                  <p className="text-2xl font-bold text-slate-900 mb-2">(667)752-0080</p>
+                  <p className="text-slate-600 mb-4">Lunes - Viernes 9:00 AM - 6:00 PM</p>
                   <Button className="bg-blue-600 hover:bg-blue-700">
-                    <a href="tel:+15551234567">Call Now</a>
+                    <a href="tel:+526677520080">Llamar</a>
                   </Button>
                 </CardContent>
               </Card>
@@ -108,14 +108,14 @@ export default function NotFound() {
               <Card className="text-center">
                 <CardHeader>
                   <Mail className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                  <CardTitle>Email Us</CardTitle>
-                  <CardDescription>Send us a message anytime</CardDescription>
+                  <CardTitle>Email</CardTitle>
+                  <CardDescription>Contáctenos cuando guste.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg font-semibold text-slate-900 mb-2">info@accountingfirm.com</p>
-                  <p className="text-slate-600 mb-4">We'll respond within 24 hours</p>
+                  <p className="text-slate-600 mb-4">Responderemos dentro de 24 horas.</p>
                   <Button className="bg-blue-600 hover:bg-blue-700">
-                    <a href="mailto:info@accountingfirm.com">Send Email</a>
+                    <a href="mailto:administracion@contadoressca.com">Send Email</a>
                   </Button>
                 </CardContent>
               </Card>
@@ -128,9 +128,9 @@ export default function NotFound() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Common Searches</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Páginas</h2>
             <p className="text-lg text-slate-600 mb-8">
-              Looking for something specific? Here are some popular topics our clients search for
+              ¿Buscas algo específico? Aquí tienes algunos temas populares que buscan nuestros clientes.
             </p>
 
             <div className="flex flex-wrap gap-3 justify-center">
@@ -161,22 +161,6 @@ export default function NotFound() {
                 <Link href="/services">View All Services</Link>
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-blue-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
-            <Calculator className="h-16 w-16 text-blue-200 mx-auto mb-6" />
-            <h2 className="text-3xl font-bold mb-4">Still Need Assistance?</h2>
-            <p className="text-xl text-blue-100 mb-8">
-              Our accounting experts are here to help you with any questions or concerns you may have.
-            </p>
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
-              <Link href="/contact">Get Free Consultation</Link>
-            </Button>
           </div>
         </div>
       </section>
