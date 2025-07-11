@@ -83,22 +83,27 @@ const industries = [
 export default function ServiciosPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Servicios */}
+      {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Nuestros servicios</h1>
             <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
-              Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y auditoría.
+              Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y de auditoría.
             </p>
           </div>
+        </div>
+      </section>
       
+      {/* Services Cards Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((svc, idx) => (
               <Link
                 key={idx}
                 href={svc.href}
-                className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col justify-between h-full bg-white text-slate-900"
+                className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col justify-between h-full text-slate-900 bg-white"
               >
                 <div className="flex justify-between items-start">
                   <div>
