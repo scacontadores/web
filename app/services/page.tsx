@@ -53,7 +53,7 @@ const services = [
     icon: <Calculator className="h-10 w-10 text-blue-600" />,
     title: "Dictamen de enajenación de acciones",
     description: "Determinación de la utilidad fiscal e ISR derivado de la venta de acciones.",
-    href: "/services/enajenacion-acciones",
+    href: "/services/dictamen-acciones",
   },
   {
     icon: <Users className="h-10 w-10 text-blue-600" />,
