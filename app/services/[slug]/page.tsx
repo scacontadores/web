@@ -4,8 +4,8 @@ import {
   Shield,
   Users,
 } from "lucide-react"
-import { useState } from "react"
 import { notFound } from "next/navigation"
+import FAQSection from "@/components/FAQSection"
 
 // --- Datos de servicios ---
 const services = [
@@ -82,7 +82,6 @@ interface PageProps {
 
 export default function ServiceDetailPage({ params }: PageProps) {
   const service = services.find((s) => s.slug === params.slug)
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null)
 
   if (!service) return notFound()
 
@@ -105,28 +104,9 @@ export default function ServiceDetailPage({ params }: PageProps) {
             <Icon className="h-16 w-16 text-blue-600" />
           </div>
 
-          {/* Preguntas frecuentes */}
+          {/* Sección FAQ (cliente) */}
           {service.faqs && service.faqs.length > 0 && (
-            <div className="mt-12">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-6">
-                Preguntas frecuentes
-              </h2>
-              <div className="space-y-4">
-                {service.faqs.map((faq, idx) => (
-                  <div key={idx} className="border rounded-lg p-4">
-                    <button
-                      className="w-full text-left text-slate-900 font-medium focus:outline-none"
-                      onClick={() => setOpenFAQ(openFAQ === idx ? null : idx)}
-                    >
-                      {faq.question}
-                    </button>
-                    {openFAQ === idx && (
-                      <p className="mt-2 text-slate-600">{faq.answer}</p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
+            <FAQSection faqs={service.faqs} />
           )}
         </div>
       </section>
