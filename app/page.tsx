@@ -47,32 +47,150 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { slug: "contabilidad", title: "Contabilidad y obligaciones fiscales", icon: Calculator, desc: "Elaboración de contabilidad mensual del Cliente para el cumplimiento de obligaciones fiscales y mercantiles." },
-              { slug: "consultoria", title: "Consultoría contable y fiscal", icon: TrendingUp, desc: "Acompañamiento y supervisión al departamento de contabilidad del Cliente en la ejecución de la misma." },
-              { slug: "auditoria-fiscal", title: "Auditoría fiscal electrónica", icon: Shield, desc: "Revisión y verificación analítica con un alcance total del 100%." },
-              { slug: "nomina", title: "Nómina y obligaciones laborales", icon: Users, desc: "Elaboración de nóminas de sueldos del Cliente ​​en estricta conformidad con las disposiciones legales aplicables." },
-              { slug: "asesoria-financiera", title: "Asesoría financiera", icon: Users, desc: "Aplicación de técnicas de análisis financiero a la información del Cliente para generar conocimiento práctico y valioso." },
-              { slug: "auditoria-eeff", title: "Auditoría de estados financieros", icon: Users, desc: "Emisión de opiniones profesionales acerca de la fiabilidad de los estados financieros de la empresa auditada." },
-              { slug: "dictamen-acciones", title: "Dictamen de enajenación de acciones", icon: Users, desc: "Determinación de la utilidad fiscal y cálculo del ISR derivado de la venta de acciones." },
-              { slug: "dictamen-imss", title: "Dictamen IMSS", icon: Users, desc: "Análisis de los movimientos de afiliación de los trabajadores al IMSS." },
-              { slug: "devolucion-iva", title: "Devolución de impuestos a favor", icon: Users, desc: "Gestión ante la Autoridad Fiscal para obtener la devolución de impuestos a favor del Cliente." }
-            ].map(({ slug, title, icon: Icon, desc }) => (
-              <Link key={slug} href={`/services/${slug}`} passHref legacyBehavior>
-                <a className="block">
-                  <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer">
-                    <CardHeader>
-                      <Icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                      <CardTitle>{title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription>{desc}</CardDescription>
-                    </CardContent>
-                  </Card>
-                </a>
-              </Link>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+            <Link href="/services/contabilidad" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Calculator className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Contabilidad y obligaciones fiscales</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Elaboración de contabilidad mensual del Cliente para el cumplimiento de obligaciones fiscales y mercantiles.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/consultoria" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <TrendingUp className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Consultoría contable y fiscal</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Acompañamiento y supervisión al departamento de contabilidad del Cliente en la ejecución de la misma.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/auditoria-fiscal" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Auditoría fiscal electrónica</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Revisión y verificación analítica con un alcance total del 100%.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/nomina" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Nómina y obligaciones laborales</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Elaboración de nóminas de sueldos del Cliente ​​en estricta conformidad con las disposiciones legales aplicables.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/asesoria-financiera" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Asesoría financiera</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Aplicación de técnicas de análisis financiero a la información del Cliente para generar conocimiento práctico y valioso.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/auditoria-eeff" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Auditoría de estados financieros</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Emisión de opiniones profesionales acerca de la fiabilidad de los estados financieros de la empresa auditada.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/dictamen-acciones" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Dictamen de enajenación de acciones</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Determinación de la utilidad fiscal y cálculo del ISR derivado de la venta de acciones.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/dictamen-imss" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Dictamen IMSS</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Análisis de los movimientos de afiliación de los trabajadores al IMSS.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
+
+            <Link href="/services/devolucion-iva" passHref legacyBehavior>
+              <a className="block h-full">
+                <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                  <CardHeader>
+                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <CardTitle>Devolución de impuestos a favor</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Gestión ante la Autoridad Fiscal para obtener la devolución de impuestos a favor del Cliente.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </Link>
           </div>
         </div>
       </section>
