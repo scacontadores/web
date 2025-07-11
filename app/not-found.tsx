@@ -112,10 +112,10 @@ export default function NotFound() {
                   <CardDescription>Contáctenos cuando guste.</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold text-slate-900 mb-2">info@accountingfirm.com</p>
+                  <p className="text-lg font-semibold text-slate-900 mb-2">administracion@contadoressca.com</p>
                   <p className="text-slate-600 mb-4">Responderemos dentro de 24 horas.</p>
                   <Button className="bg-blue-600 hover:bg-blue-700">
-                    <a href="mailto:administracion@contadoressca.com">Send Email</a>
+                    <a href="mailto:administracion@contadoressca.com">Redactar</a>
                   </Button>
                 </CardContent>
               </Card>
@@ -158,7 +158,7 @@ export default function NotFound() {
 
             <div className="mt-8">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Link href="/services">View All Services</Link>
+                <Link href="/services">Ver todos los Servicios</Link>
               </Button>
             </div>
           </div>
