@@ -226,7 +226,7 @@ export default function HomePage() {
                   <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-slate-900">Empatía</h3>
-                    <p className="text-slate-600 text-justify">Entendemos el entorno, las necesidades, posibilidades y las oportunidades de las empresas y sus empresarios más allá del ambiente contable y fiscal</p>
+                    <p className="text-slate-600 text-justify">Entendemos el entorno, las necesidades, posibilidades y las oportunidades de las empresas y sus empresarios más allá del ambiente contable y fiscal.</p>
                   </div>
                 </div>
 
