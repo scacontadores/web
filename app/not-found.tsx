@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function NotFound() {
   const quickLinks = [
-    { href: "/", label: "Homepage", icon: Home },
+    { href: "/", label: "Inicio", icon: Home },
     { href: "/services", label: "Our Services", icon: Calculator },
     { href: "/about", label: "About Us", icon: Search },
     { href: "/contact", label: "Contact Us", icon: Phone },
