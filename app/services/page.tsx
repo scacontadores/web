@@ -96,18 +96,16 @@ export default function ServiciosPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 space-y-8">
-          <div>
-            <p className="text-lg text-slate-600 mb-8">
-              Selecciona el servicio de tu interés para obtener más información.
-            </p>
-          </div>
-        </div>    
+      <section className="pt-20 pb-0 bg-white">
+        <div className="container mx-auto px-4">
+          <p className="text-lg text-slate-600 mb-8">
+            Selecciona el servicio de tu interés para obtener más información.
+          </p>
+        </div>
       </section>
       
       {/* Services Cards Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-12 pb-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((svc, idx) => (
