@@ -30,7 +30,8 @@ export default function NotFound() {
             <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
               Lo sentimos, no pudimos encontrar la página que buscas. Es posible que se haya introducido una URL incorrecta.
             </p>
-          </div>   
+          </div>  
+        </div>            
       </section>
 
       {/* Quick Links Section */}
