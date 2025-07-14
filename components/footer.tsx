@@ -16,7 +16,7 @@ export function Footer() {
               />
               <span className="text-xl font-bold">Contadores SCA</span>
             </div>
-            <p className="text-slate-300 mb-4">
+            <p className="text-slate-300 mb-4 text-justify">
               Servicios de confianza orientados al crecimiento empresarial mediante una gestión financiera integral y una planificación estratégica eficaz.
             </p>
           </div>
