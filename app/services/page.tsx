@@ -103,7 +103,8 @@ export default function ServiciosPage() {
             </p>
           </div>
         </div>      
-        
+       </section>     
+      
       {/* Services Cards Section */}
       <section className="pt-0 pb-20 bg-white">
         <div className="container mx-auto px-4">
