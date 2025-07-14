@@ -85,9 +85,9 @@ export default function ServiciosPage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Nuestros servicios</h1>
-            <p className="text-xl md:text-2xl text-slate-200 text-center">
+            <p className="text-xl md:text-2xl text-slate-200">
               Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y de auditoría.
             </p>  
         </div>
