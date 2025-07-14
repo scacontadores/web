@@ -17,22 +17,6 @@ export default function HomePage() {
               Servicios contables profesionales de confianza.<br />
               Brindamos apoyo a las empresas para su crecimiento mediante una gestión financiera integral y una planificación estratégica.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" passHref legacyBehavior>
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  Obtenga una consulta
-                </Button>
-              </Link>
-              <Link href="/about" passHref legacyBehavior>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
-                >
-                  Más información
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
