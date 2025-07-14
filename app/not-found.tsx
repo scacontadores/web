@@ -14,7 +14,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main 404 Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-18 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-8xl md:text-9xl font-bold text-blue-600 opacity-10 leading-none">
             404
@@ -22,7 +22,7 @@ export default function NotFound() {
         </div>
 
             {/* Error Message */}
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Página no encontrada
