@@ -27,23 +27,6 @@ export default function NotFound() {
                 Lo sentimos, no pudimos encontrar la página que buscas. Es posible que se haya introducido una URL incorrecta.
               </p>
             </div>
-
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Link href="/" className="flex items-center gap-2">
-                  <ArrowLeft className="h-4 w-4" />
-                  Inicio
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
-              >
-                <Link href="/contact">Soporte</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
