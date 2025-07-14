@@ -14,7 +14,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main 404 Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-8xl md:text-9xl font-bold text-blue-600 opacity-10 leading-none">
             404
@@ -30,10 +30,7 @@ export default function NotFound() {
             <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
               Lo sentimos, no pudimos encontrar la página que buscas. Es posible que se haya introducido una URL incorrecta.
             </p>
-          </div>
-        </div>
-        {/* Filler para igualar altura visual */}
-        <div className="h-12 md:h-16" />       
+          </div>   
       </section>
 
       {/* Quick Links Section */}
