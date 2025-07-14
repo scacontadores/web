@@ -89,8 +89,7 @@ export default function ServiciosPage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Nuestros servicios</h1>
             <p className="text-xl md:text-2xl text-slate-200 text-center">
               Generamos y compartimos conocimiento de vanguardia en las áreas de contabilidad, fiscal, financiera y de auditoría.
-            </p>
-          </div>            
+            </p>  
         </div>
       </section>
 
