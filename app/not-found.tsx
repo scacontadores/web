@@ -14,7 +14,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main 404 Section */}
-      <section className="flex-1 bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             {/* Large 404 Number */}
@@ -22,14 +22,14 @@ export default function NotFound() {
 
             {/* Error Message */}
             <div className="relative -mt-20 mb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Página no encontrada</h1>
-              <p className="text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
-                Lo sentimos, no pudimos encontrar la página que buscas. Es posible que se haya movido, eliminado o que hayas introducido una URL incorrecta.
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Página no encontrada</h1>
+              <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
+                Lo sentimos, no pudimos encontrar la página que buscas. Es posible que se haya introducido una URL incorrecta.
               </p>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 <Link href="/" className="flex items-center gap-2">
                   <ArrowLeft className="h-4 w-4" />
