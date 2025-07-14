@@ -21,7 +21,7 @@ export default function NotFound() {
             <div className="text-8xl md:text-9xl font-bold text-blue-600 mb-8 opacity-20">404</div>
 
             {/* Error Message */}
-            <div className="relative -mt-20 mb-8">
+            <div className="mb-8">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Página no encontrada</h1>
               <p className="text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto">
                 Lo sentimos, no pudimos encontrar la página que buscas. Es posible que se haya introducido una URL incorrecta.
