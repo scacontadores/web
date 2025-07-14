@@ -10,8 +10,8 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Acerca de nosotros</h1>
-            <p className="text-xl text-slate-200">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Acerca de nosotros</h1>
+            <p className="text-xl md:text-2xl text-slate-200 text-center">
               Socios financieros de confianza con más de cuatro décadas de experiencia apoyando a las empresas a tener éxito.
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 Este Despacho fue fundado por el Sr. José Guadalupe Campos Morales con estudios de contador privado y experiencia práctica como administrador
                 de negocios e inicia operaciones en el año de 1953 en el domicilio de Escobedo #248 Pte., colonia Centro, Culiacán, Sinaloa, atendiendo pequeños
                 negocios en el manejo de contabilidad, declaraciones de impuestos y trámites fiscales ante dependencias gubernamentales. En 1962 el Despacho traslada
-                sus operaciones a Juan José Ríos # 368 Pte. Colonia Almada de la misma ciudad e incorpora la participación de sus hijos Ricardo y Héctor
+                sus operaciones a Juan José Ríos #368 Pte. Colonia Almada de la misma ciudad e incorpora la participación de sus hijos Ricardo y Héctor
                 (hermanos de Samuel) para darle carácter de negocio familiar; es en el año de 1970 cuando Samuel se integra a este Despacho. 
               </p>
               <p className="text-lg text-slate-600 mb-6 text-justify">
