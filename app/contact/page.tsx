@@ -59,10 +59,10 @@ export default function ContactPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 space-y-8">
           <div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Ponte en contacto
             </h2>
-            <p className="text-lg text-slate-600 mb-8">
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Estamos aquí para apoyarte con todas sus necesidades contables y
               financieras. Contáctanos a través del método de su preferencia.
             </p>
