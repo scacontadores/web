@@ -32,6 +32,8 @@ export default function NotFound() {
             </p>
           </div>
         </div>
+        {/* Filler para igualar altura visual */}
+        <div className="h-12 md:h-16" />       
       </section>
 
       {/* Quick Links Section */}
