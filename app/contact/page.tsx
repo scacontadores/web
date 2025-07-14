@@ -46,9 +46,10 @@ export default function ContactPage() {
       <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contáctanos</h1>
-            <p className="text-xl text-slate-200">
-              ¿Listo para dar el siguiente paso? Contacta a nuestro equipo.
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contáctanos</h1>
+            <p className="text-xl md:text-2xl text-slate-200 text-center">
+              ¿Listo para dar el siguiente paso? <br />
+              Contacta a nuestro equipo.
             </p>
           </div>
         </div>
@@ -63,8 +64,7 @@ export default function ContactPage() {
             </h2>
             <p className="text-lg text-slate-600 mb-8">
               Estamos aquí para apoyarte con todas sus necesidades contables y
-              financieras. Contáctanos a través de cualquiera de los siguientes
-              métodos.
+              financieras. Contáctanos a través del método de su preferencia.
             </p>
           </div>
 
