@@ -14,7 +14,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main 404 Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <span className="text-8xl md:text-9xl font-bold text-blue-600 opacity-10 leading-none">
             404
