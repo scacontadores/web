@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Soluciones para su negocio</h1>
             <p className="text-xl md:text-2xl text-slate-200 text-center">
-              Servicios contables confiables orientados al crecimiento empresarial mediante una gestión financiera integral y una planificación estratégica eficaz.
+              Servicios de confianza orientados al crecimiento empresarial mediante una gestión financiera integral y una planificación estratégica eficaz.
             </p>
           </div>
         </div>
