@@ -57,14 +57,13 @@ export default function ContactPage() {
 
       {/* Contact Information */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 space-y-8">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Ponte en contacto
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto text-center">
-              Estamos aquí para apoyarte con todas sus necesidades contables y
-              financieras. Contáctanos a través del método de su preferencia.
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Estamos aquí para apoyarte con todas tus necesidades contables y financieras. Contáctanos a través del método de tu preferencia.
             </p>
           </div>
 
@@ -166,7 +165,7 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">
               Visita nuestras oficinas
             </h2>
