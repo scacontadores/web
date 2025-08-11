@@ -17,15 +17,35 @@ const services = [
       "Este servicio consiste en elaborar cada mes la contabilidad del Cliente, cumpliendo con ello obligaciones de tipo fiscal y mercantil. Con los datos emanados de la contabilidad se hacen los cálculos y preparación de los formatos fiscales para el cumplimiento de las obligaciones fiscales.",
     faqs: [
       {
-        question: "¿Cuál es el perfil o características adecuadas de los negocios a los que se orienta el servicio de contabilidad y obligaciones fiscales?",
+        question: "¿A quién está dirigido este servicio?",
         answer:
-          "Este servicio está diseñado para negocios con hasta 10 empleados en donde su dueño o dueños están inmersos en la operación del mismo, estableciendo y supervisando a la vez los controles para salvaguardar los activos o propiedades del negocio y para ellos no es relevante el contar con información emanada de la contabilidad para la toma de decisiones. Generalmente a negocios les resulta más económico subcontratar este servicio que establecer un departamento contable propio que les realice esta función.",
+          "A negocios con hasta 10 empleados, cuyos dueños participan directamente en la operación y supervisión, y que prefieren subcontratar la contabilidad y obligaciones fiscales en lugar de mantener un departamento contable propio.",
       },
       {
-        question: "¿El Cliente que contrata este servicio debe invertir en equipos de cómputo y programas informáticos?",
+        question: "¿Necesito invertir en equipo o software contable?",
         answer:
-          "No, la inversión en estos bienes corre a cargo del Despacho.",
+          "No, todo el equipo y software necesarios son proporcionados por nuestro despacho.",
       },
+      {
+        question: "¿Qué pasa si no llevo contabilidad siendo microempresario?",
+        answer:
+          "Incumplirías obligaciones fiscales, lo que puede generar sanciones, posibles delitos fiscales y que la autoridad determine los impuestos a pagar según sus criterios.",
+      },
+      {
+        question: "¿Incluye asesoría sobre el régimen fiscal más conveniente y beneficios disponibles?",
+        answer:
+          "Sí, este servicio incluye orientación para elegir el régimen fiscal más favorable y aprovechar beneficios fiscales.",
+      },
+      {
+        question: "¿Incluye asesoría sobre la emisión y validación de CFDI?",
+        answer:
+          "Sí, te orientamos en cómo emitir correctamente tus CFDI y verificar que los recibidos cumplan con los requisitos fiscales.",
+      },
+      {
+        question: "¿Asumo alguna responsabilidad laboral por el personal del despacho?",
+        answer:
+          "No, el servicio es independiente y el personal del despacho atiende también a otros clientes, por lo que no asumes responsabilidades laborales.",
+      },      
     ],
   },
   {
@@ -33,13 +53,38 @@ const services = [
     title: "Consultoría contable y fiscal",
     icon: TrendingUp,
     description:
-      "Acompañamiento y supervisión al departamento de contabilidad del Cliente en la ejecución de la misma.",
+      "Supervisamos y acompañamos a tu departamento de contabilidad para garantizar registros confiables, cumplimiento de las NIF y obligaciones fiscales, laborales y societarias. Optimizamos beneficios y tratamientos fiscales, y calculamos mensualmente tus impuestos federales con nuestra plataforma Compliance Fiscal Inteligente (CFI), que usa inteligencia artificial para adaptarse a las necesidades específicas de tu empresa.",
     faqs: [
       {
-        question: "¿Pueden revisar mi contabilidad interna?",
+        question: "¿A quién está dirigido este servicio?",
         answer:
-          "Sí, ofrecemos supervisión para asegurar que el trabajo contable cumpla con normativas.",
+          "A pequeñas y medianas empresas que consideran la contabilidad como una herramienta clave para la toma de decisiones y el control interno, y que cuentan con un departamento contable propio apoyado en sistemas informáticos y personal competente.",
       },
+      {
+        question: "¿Cómo calcula la plataforma CFI mis obligaciones fiscales considerando beneficios y estímulos?",
+        answer:
+          "Realiza un diagnóstico de tu situación mediante cuestionarios inteligentes que identifican obligaciones y beneficios aplicables según leyes, reglamentos y reglas fiscales. Con esta información, construye un modelo personalizado para calcular tus obligaciones con alto grado de certeza.",
+      },
+      {
+        question: "¿Cuáles son los entregables de este servicio?",
+        answer:
+          "Observaciones sobre inconsistencias contables, cédulas comparativas con el detalle del cálculo mensual de impuestos y fundamentos legales que respaldan las respuestas a tus consultas.",
+      },
+      {
+        question: "¿Incluye capacitación para mi personal?",
+        answer:
+          "Sí, a través del acompañamiento y la atención de consultas, además de dos cursos anuales de actualización en disposiciones fiscales relevantes.",
+      },
+      {
+        question: "¿Este servicio reemplaza a mi departamento de contabilidad?",
+        answer:
+          "No, complementa su trabajo mediante supervisión, asesoría especializada y herramientas que mejoran la calidad y confiabilidad de la información.",
+      },
+      {
+        question: "¿Qué beneficios obtengo al contratar este servicio?",
+        answer:
+          "Mayor certeza y confiabilidad en la información contable, cumplimiento oportuno de obligaciones fiscales y aprovechamiento de beneficios legales que optimicen tu carga tributaria.",
+      }, 
     ],
   },
   {
@@ -47,12 +92,32 @@ const services = [
     title: "Auditoría fiscal electrónica",
     icon: Shield,
     description:
-      "Revisión y verificación analítica con un alcance total del 100%.",
+      "Revisamos y verificamos al 100% los CFDI emitidos y recibidos por tu empresa —incluyendo ingresos, egresos, complementos de pago, nómina y carta porte— para asegurar su correcta asociación con la contabilidad, cumplimiento de requisitos fiscales y validez ante el SAT. Validamos importes, retenciones, tasas de IVA, deducibilidad de gastos, operaciones vinculadas al objeto social y la existencia de CFDI que puedan corresponder a operaciones inexistentes. También conciliamos la información del SAT con tus registros y detectamos proveedores listados como EFOS en los últimos cinco ejercicios.",
     faqs: [
       {
-        question: "¿Qué incluye una auditoría electrónica?",
-        answer: "Incluye la revisión del 100% de los XML y pólizas contables.",
+        question: "¿Cuáles son las ventajas de contratar este servicio?",
+        answer: "Permite conocer si los CFDI emitidos y recibidos cumplen con el CFF y la RMF, si todas las operaciones registradas están respaldadas, y si existen CFDI no registrados o vinculados con EFOS. Reduce el riesgo de visitas domiciliarias, restricciones al uso del certificado de sello digital y facilita responder oportunamente auditorías fiscales electrónicas.",
       },
+      {
+        question: "¿Cuáles son los reportes o entregables que recibo?",
+        answer: "Un informe detallado con los resultados de la revisión, cuantificación de inconsistencias y sugerencias para corregirlas, acompañado de anexos con la evidencia y soporte de cada procedimiento aplicado.",
+      },
+      {
+        question: "¿Qué consecuencias tiene emitir o recibir CFDI con deficiencias o no hacerlo estando obligado?",
+        answer: "Puede generar sanciones administrativas, la imposibilidad de deducir fiscalmente o acreditar IVA, e incluso sanciones penales según el Código Fiscal de la Federación.",
+      },
+      {
+        question: "¿Qué pasa si tengo CFDI emitidos por EFOS y no compruebo la materialidad de la operación?",
+        answer: "La autoridad puede determinar que las erogaciones no sean deducibles, el IVA no acreditable, imponer sanciones, hacer responsables solidarios a socios y administradores, negar subsidios o estímulos, y restringir el certificado de sello digital.",
+      },
+      {
+        question: "¿Incluye la conciliación con la información del SAT?",
+        answer: "Sí, comparamos todos los CFDI en el repositorio del SAT con los registros contables, tanto de los emitidos como de los recibidos, para detectar omisiones o inconsistencias.",
+      },
+      {
+        question: "¿Revisan la deducibilidad de gastos y el cumplimiento de requisitos fiscales?",
+        answer: "Sí, validamos que los conceptos facturados correspondan a la actividad de la empresa y cumplan con las disposiciones fiscales para su deducibilidad y acreditamiento, incluyendo gastos de nómina, mantenimiento, viáticos y más.",
+      },      
     ],
   },
   {
@@ -60,13 +125,38 @@ const services = [
     title: "Nómina y obligaciones laborales",
     icon: Users,
     description:
-      "Elaboración de nóminas de sueldos del Cliente en conformidad con las disposiciones legales aplicables.",
+      "Elaboramos y timbramos tus nóminas cumpliendo con todas las disposiciones laborales y fiscales. Calculamos y preparamos para tu pago las cuotas IMSS, Infonavit, SAR y el impuesto estatal sobre nóminas, realizando los ajustes necesarios por incidencias del periodo.",
     faqs: [
       {
-        question: "¿También calculan cuotas IMSS e INFONAVIT?",
+        question: "¿A quién está dirigido este servicio?",
         answer:
-          "Sí, calculamos y timbramos todo lo relacionado a seguridad social y obligaciones laborales.",
+          "A negocios con hasta 10 empleados sin departamento contable, y a empresas más grandes que prefieren externalizar la nómina por ser más rentable que gestionarla internamente.",
       },
+      {
+        question: "¿Necesito invertir en equipo o software para la nómina?",
+        answer:
+          "No, todo el equipo y software necesarios son proporcionados por nuestro despacho.",
+      },
+      {
+        question: "¿Por qué contratar este servicio si ya tengo contabilidad o recursos humanos internos?",
+        answer:
+          "Para delegar a expertos especializados en leyes laborales y fiscales, reducir riesgos por errores o incumplimientos, liberar a tu personal para tareas más rentables y evitar costos en equipo, software y capacitación continua.",
+      },
+      {
+        question: "¿Incluye cálculos y comprobantes de vacaciones, aguinaldo, finiquitos y utilidades?",
+        answer:
+          "Sí, todos estos conceptos están incluidos en el servicio.",
+      },
+      {
+        question: "¿Incluye el diseño e implementación de un plan de previsión social?",
+        answer:
+          "No, este trabajo no está incluido en el costo del servicio.",
+      },
+       {
+        question: "¿Incluye el timbrado de los recibos de pago?",
+        answer:
+          "Sí, la emisión y timbrado de los recibos de pago a trabajadores está incluida en el servicio.",
+      },     
     ],
   },
   {
@@ -74,11 +164,27 @@ const services = [
     title: "Asesoría financiera",
     icon: Shield,
     description:
-      "Este servicio consiste en apoyar al Cliente en la aplicación de técnicas de análisis financiero a su información con el fin de convertir este análisis en conocimiento útil que le permita entender la verdadera situación financiera y económica de la empresa a través de los modelos de tendencias y razones financieras que ayuden a tomar decisiones oportunas y de calidad.",
+      "Aplicamos técnicas de análisis financiero para transformar tus datos en información clave que te ayude a entender la situación real de tu empresa y tomar decisiones acertadas. Creamos un modelo personalizado con comparativos de estados financieros, análisis de resultados, balance, flujo de efectivo, capital de trabajo y razones financieras. Además, te acompañamos en reuniones de análisis para identificar tendencias, oportunidades, debilidades y amenazas.",
     faqs: [
       {
-        question: "¿Qué es la asesoría financiera?",
-        answer: "blablabla",
+        question: "¿En qué consiste el servicio de asesoría financiera?",
+        answer: "Analizamos a fondo tu información financiera para brindarte un diagnóstico claro de la situación económica de tu empresa y ayudarte a tomar decisiones oportunas.",
+      },
+      {
+        question: "¿Qué tipo de análisis realizan?",
+        answer: "Elaboramos un modelo personalizado que compara y analiza estados financieros, estado de resultados, balance general, flujo de efectivo, capital de trabajo y razones financieras.",
+      },
+      {
+        question: "¿Incluye reuniones para revisar los resultados?",
+        answer: "Sí, te acompañamos en reuniones periódicas para explicar el análisis, detectar tendencias, oportunidades, debilidades y amenazas.",
+      },
+      {
+        question: "¿Se adapta el análisis a las necesidades de mi empresa?",
+        answer: "Sí, el modelo es personalizado según tu estructura, pudiendo incluir estados financieros individuales, combinados o consolidados.",
+      },
+      {
+        question: "¿Este servicio es sólo para empresas grandes?",
+        answer: "No, está diseñado para cualquier empresa que busque comprender mejor su situación financiera y optimizar la toma de decisiones.",
       },
     ],
   },
@@ -87,13 +193,38 @@ const services = [
     title: "Auditoría de estados financieros",
     icon: Calculator,
     description:
-      "Este servicio consiste en emitir una opinión profesional acerca del grado de veracidad que guardan los estados financieros de la empresa que se auditan con el fin de otorgar seguridad razonable tanto a su Administración como a terceras personas interesadas sobre la confiabilidad de los estados financieros para otorgar seguridad a los tomadores de decisiones ya sean estas relacionadas con la operación, la estrategia de negocios o de aspectos de tipo legal",
+      "Emitimos una opinión profesional sobre la veracidad de tus estados financieros, brindando seguridad razonable a tu administración y a terceros sobre su confiabilidad para la toma de decisiones operativas, estratégicas o legales. Aplicamos normas internacionales de auditoría y evaluamos el control interno, políticas contables, salvaguarda de activos e integridad empresarial, adaptándonos a las circunstancias de tu empresa.",
     faqs: [
       {
-        question: "¿Cuáles es el perfil o características adecuadas de las empresas a las que se orienta el servicio de auditoría de estados financieros?",
+        question: "¿A quién está dirigido este servicio?",
         answer:
-          "Este servicio está diseñado para aquellas empresas que tienen distintos interesados en su situación financiera tales como accionistas que comparten la propiedad de la empresa, proveedores relevantes, bancos que le otorgan préstamos, entre otros. La necesidad de estos usuarios es que dicha información financiera tenga un alto grado de certidumbre en cuanto a su contenido cuantitativo y cualitativo que les otorgue la seguridad necesaria para la toma de decisiones empresariales. ",
+          "A empresas con accionistas, proveedores, bancos u otros interesados que requieren información financiera confiable, ya sea por obligación legal, fiscal o estatutaria, o para contar con una opinión imparcial cuando la administración está a cargo de terceros.",
       },
+      {
+        question: "¿En qué consiste la auditoría de estados financieros?",
+        answer:
+          "En evaluar y emitir una opinión profesional sobre la veracidad y confiabilidad de los estados financieros, aplicando normas internacionales de auditoría y revisando el control interno de la empresa.",
+      },
+      {
+        question: "¿Qué elementos garantizan la confianza en la opinión del auditor?",
+        answer:
+          "El cumplimiento de las Normas de Información Financiera (NIF), la aplicación de Normas Internacionales de Auditoría, el apego a un código de ética profesional y la experiencia, probidad y reconocimiento del Contador Público Certificado que realiza el trabajo.",
+      },
+      {
+        question: "¿Cuáles son las principales ventajas de este servicio?",
+        answer:
+          "Detectar errores o sesgos en la información financiera, identificar riesgos y debilidades en controles internos, sugerir mejoras en procesos, y generar mayor confianza ante inversionistas o acreedores, lo que puede facilitar financiamiento en mejores condiciones.",
+      },
+      {
+        question: "¿Incluye la revisión de controles internos?",
+        answer:
+          "Sí, el servicio evalúa políticas contables, salvaguarda de activos, integridad empresarial y otros aspectos clave para la confiabilidad de la información financiera.",
+      },
+      {
+        question: "¿Se adapta la auditoría a cada empresa?",
+        answer:
+          "Sí, el trabajo se ajusta a las circunstancias específicas de cada cliente, considerando sus necesidades, estructura y requerimientos legales o contractuales.",
+      },      
     ],
   },
   {
@@ -101,12 +232,27 @@ const services = [
     title: "Dictamen de enajenación de acciones",
     icon: Calculator,
     description:
-      "Este servicio consiste en determinar la utilidad fiscal y el pago del impuesto sobre la renta por la venta de acciones que lleva a cabo una persona física propietaria de acciones o partes sociales de una sociedad y emitir un dictamen al Servicio de administración tributaria avalando la correcta determinación de la utilidad fiscal y su correspondiente impuesto sobre la renta a pagar. ",
+      "Determinamos la utilidad fiscal y el ISR derivado de la venta de acciones o partes sociales realizada por una persona física, emitiendo un dictamen ante el SAT que avala el correcto cálculo y pago del impuesto.",
     faqs: [
       {
-        question: "¿Cuándo le es conveniente a un enajenante de acciones presentar el dictamen de enajenación de acciones?",
+        question: "¿Es obligatorio presentar el dictamen de enajenación de acciones?",
         answer:
-          "El enajenante de las acciones debe pagar impuesto sobre la renta por la utilidad que tenga en esta operación y el comprador de estas acciones debe retenerle un 20% del valor de la enajenación al momento de la venta y enterarlo al Servicio de administración tributaria, mismo que tiene efectos de pago provisional para el enajenante. Si el importe de este 20% del total de la venta de las acciones resultara en una retención excesiva en relación al impuesto definitivo que esta operación le cause al enajenante, existe la alternativa de que el comprador le haga una retención menor al 20%, siempre que ello se compruebe con el dictamen que emita un Contador Público Certificado autorizado ante el Servicio de administración tributaria. De acuerdo a lo anterior le es conveniente al enajenante presentar el dictamen de enajenación de acciones para que la retención sea menor al impuesto definitivo que debe pagar y evitar con ello provocar un saldo a favor y su consecuente solicitud de devolución al Servicio de administración tributaria.",
+          "No, solo se presenta si la persona física considera que le conviene hacerlo.",
+      },
+      {
+        question: "¿Cuándo conviene presentar el dictamen de enajenación de acciones?",
+        answer:
+          "Cuando el 20% de retención sobre el valor de venta que aplica el comprador sea mayor al impuesto definitivo, ya que el dictamen permite reducir esa retención y evitar saldos a favor. También es recomendable cuando se requiere un cálculo preciso de la utilidad fiscal, debido a la alta complejidad y variables históricas involucradas en la venta de acciones.",
+      },
+      {
+        question: "¿Qué ventajas ofrece este servicio?",
+        answer:
+          "Brinda seguridad y confianza al contar con un profesional experto en la materia, permite reducir la retención de ISR evitando desembolsos innecesarios y trámites de devolución, y en caso de revisión por parte del SAT, el despacho asume la corresponsabilidad y atiende directamente el proceso.",
+      },
+      {
+        question: "¿El servicio incluye la presentación del dictamen ante el SAT?",
+        answer:
+          "Sí, nos encargamos de elaborar y presentar el dictamen cumpliendo con todos los requisitos legales y fiscales establecidos.",
       },
     ],
   },
@@ -115,18 +261,38 @@ const services = [
     title: "Dictamen IMSS",
     icon: Calculator,
     description:
-      "Este servicio consiste en el examen a los movimientos de afiliación de los trabajadores al IMSS, la correcta integración de salarios para efectos del pago de cuotas al IMSS; las nóminas, listas de rayas y liquidaciones de cuotas obrero patronales emitidas por el sistema de nóminas del Cliente.",
+      "Revisamos la afiliación de trabajadores, la integración de salarios para el cálculo de cuotas, nóminas, contratos, registros contables y clasificación de prima de riesgo. Verificamos el cumplimiento de la Ley del IMSS y el RACERF, asegurando que el pago de cuotas obrero patronales sea correcto. Este dictamen, contemplado en el Art. 170 del RACERF, tiene validez legal salvo prueba en contrario, otorgando certeza a la empresa sobre el cumplimiento de sus obligaciones.",
     faqs: [
       {
-        question: "¿Cuál es el perfil o características adecuadas de las empresas a las que se orienta el servicio de Dictamen para efectos del IMSS?",
+        question: "¿A quién está dirigido este servicio?",
         answer:
-          "Este servicio lo requieren de manera obligatoria (Art. 16 Ley del IMSS) los patrones que cuenten con más de 300 trabajadores o que teniendo menos de esa cantidad, opten por hacerlo voluntariamente. ",
+          "Es obligatorio para patrones con más de 300 trabajadores (Art. 16 de la Ley del IMSS) y opcional para quienes tengan menos, pero deseen presentarlo de forma voluntaria para obtener sus beneficios.",
       },
       {
-        question: "¿Qué pasa si siendo una empresa con más de 300 trabajadores no presento el dictamen al IMSS?",
+        question: "¿Qué pasa si no presento el dictamen teniendo más de 300 trabajadores?",
         answer:
-          "Este incumplimiento está sujeto a sanción administrativa de acuerdo con los Arts. 304-A y 304-B de la Ley del IMSS, así como a la emisión de opinión negativa por parte del IMSS en cuanto al cumplimiento de obligaciones ante este Instituto.",
+          "El incumplimiento puede generar sanciones administrativas (Arts. 304-A y 304-B de la Ley del IMSS) y una opinión negativa del Instituto sobre el cumplimiento de obligaciones.",
       },
+      {
+        question: "¿Qué beneficios ofrece este servicio?",
+        answer:
+          "Permite la autocorrección de errores, evita multas, reduce revisiones del ejercicio anterior y exenta de visitas domiciliarias por los periodos dictaminados, ya sea de forma obligatoria o voluntaria.",
+      },
+      {
+        question: "¿Quién puede emitir el dictamen para efectos del IMSS?",
+        answer:
+          "Solo un Contador Público Autorizado por el IMSS puede elaborarlo y presentarlo oficialmente, garantizando su validez legal.",
+      },
+      {
+        question: "¿Incluye la revisión de la prima de riesgo de trabajo?",
+        answer:
+          "Sí, verificamos la correcta clasificación de la prima de riesgo para evitar pagos indebidos o diferencias posteriores.",
+      },
+      {
+        question: "¿Qué pasa si el IMSS detecta diferencias después del dictamen?",
+        answer:
+          "El dictamen se presume válido salvo prueba en contrario; si se detectan diferencias, deberán regularizarse conforme a la ley.",
+      }, 
     ],
   },
   {
@@ -134,12 +300,33 @@ const services = [
     title: "Devolución de IVA",
     icon: Calculator,
     description:
-      "Este servicio consiste obtener de la Autoridad fiscal la devolución de impuestos a favor del cliente ya sea de IVA o de ISR con motivo causar tasa 0% en los ingresos que obtiene, haber hecho pagos de lo indebido o pagos provisionales en exceso del impuesto anual.",
+      "Gestionamos ante la autoridad fiscal la devolución de saldos a favor de IVA, ya sea por aplicar tasa 0% en ingresos, pagos indebidos o provisionales en exceso. Revisamos minuciosamente registros contables, CFDI, estados de cuenta y materialidad de operaciones, y elaboramos la documentación requerida para presentar la solicitud formal y dar seguimiento a su resolución.
+",
     faqs: [
       {
-        question: "¿Cuáles son las ventajas de contratar el servicio de Devolución de impuestos a favor?",
+        question: "¿En qué consiste este servicio?",
         answer:
-          "El Cliente recupera una cuenta por cobrar a su favor y a cargo de la Autoridad fiscal misma que de no promover su recuperación, puede caducar el derecho a hacerlo. ",
+          "En gestionar ante la autoridad fiscal la devolución de saldos a favor de IVA, revisando contabilidad, CFDI, estados de cuenta y materialidad de operaciones, y preparando toda la documentación requerida para sustentar la solicitud.",
+      },
+      {
+        question: "¿En qué casos puedo solicitar la devolución de IVA?",
+        answer:
+          "Cuando se aplicó tasa 0% en ingresos, se hicieron pagos indebidos o pagos provisionales superiores al impuesto anual causado.",
+      },
+      {
+        question: "¿Qué revisa el despacho antes de presentar la solicitud?",
+        answer:
+          "Realizamos una revisión detallada de registros contables, CFDI, estados de cuenta, razón de negocio y elementos de materialidad de las operaciones que originan el saldo a favor.",
+      },
+      {
+        question: "¿Cuáles son las ventajas de contratar este servicio?",
+        answer:
+          "Recuperas un saldo a tu favor antes de que prescriba el derecho, cuentas con asesoría especializada que ahorra tiempo y reduce riesgos, tienes certeza de que la devolución es procedente y recibes un diagnóstico previo para evaluar la viabilidad antes de iniciar el trámite.",
+      },
+      {
+        question: "¿El servicio incluye la presentación de la solicitud ante el SAT?",
+        answer:
+          "Sí, elaboramos los escritos, formatos y anexos, y presentamos la solicitud directamente ante la autoridad fiscal, dando seguimiento hasta la resolución.",
       },
     ],
   },
