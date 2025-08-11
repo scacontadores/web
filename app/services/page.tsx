@@ -63,7 +63,7 @@ const services = [
   },
   {
     icon: <Calculator className="h-10 w-10 text-blue-600" />,
-    title: "Devolución de impuestos a favor",
+    title: "Devolución de IVA",
     description: "Gestión ante la Autoridad Fiscal para la obtención de la devolución de impuestos a favor del Cliente.",
     href: "/services/devolucion-iva",
   },
