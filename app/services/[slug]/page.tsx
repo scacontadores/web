@@ -300,8 +300,7 @@ const services = [
     title: "Devolución de IVA",
     icon: Calculator,
     description:
-      "Gestionamos ante la autoridad fiscal la devolución de saldos a favor de IVA, ya sea por aplicar tasa 0% en ingresos, pagos indebidos o provisionales en exceso. Revisamos minuciosamente registros contables, CFDI, estados de cuenta y materialidad de operaciones, y elaboramos la documentación requerida para presentar la solicitud formal y dar seguimiento a su resolución.
-",
+      "Gestionamos ante la autoridad fiscal la devolución de saldos a favor de IVA, ya sea por aplicar tasa 0% en ingresos, pagos indebidos o provisionales en exceso. Revisamos minuciosamente registros contables, CFDI, estados de cuenta y materialidad de operaciones, y elaboramos la documentación requerida para presentar la solicitud formal y dar seguimiento a su resolución.",
     faqs: [
       {
         question: "¿En qué consiste este servicio?",
