@@ -120,12 +120,11 @@ export default function ServiciosPage() {
               <Link
                 key={idx}
                 href={svc.href}
-                className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col justify-between h-full text-slate-900 bg-white"
+                className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col items-center text-center h-full text-slate-900 bg-white"
               >
-                <div className="flex justify-between items-start">
-                  <div>
+                <div className="mb-4">{svc.icon}<div>
                     <h3 className="text-xl font-semibold mb-2">{svc.title}</h3>
-                    <p className="text-sm text-slate-600">{svc.description}</p>
+                    <p className="text-sm text-slate-600 max-w-prose mx-auto [text-wrap:balance] md:[text-align:justify]">{svc.description}</p>
                   </div>
                   {svc.icon}
                 </div>
