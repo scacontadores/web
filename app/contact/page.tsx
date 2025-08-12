@@ -56,7 +56,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </div>      
 
       {/* Contact Information */}
       <section className="py-20 bg-white">
