@@ -50,8 +50,8 @@ export default function ContactPage() {
               Contáctanos
             </h1>
             <p className="text-xl md:text-2xl text-slate-200 text-center">
-              ¿Listo para dar el siguiente paso hacia soluciones contables y financieras efectivas? <br />
-              Contacta a nuestro equipo.
+              ¿Listo para dar el siguiente paso hacia soluciones contables y </br>
+            financieras efectivas?
             </p>
           </div>
         </div>
