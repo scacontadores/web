@@ -109,7 +109,9 @@ export default function ServiciosPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nuestros servicios</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Nuestros servicios
+            </h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Selecciona el servicio de tu interés para obtener más información.
             </p>
@@ -122,12 +124,13 @@ export default function ServiciosPage() {
                 href={svc.href}
                 className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col items-center text-center h-full text-slate-900 bg-white"
               >
-                <div className="mb-4 flex justify-center">{svc.icon}<div>
+                <div className="mb-4 flex justify-center">{svc.icon}</div>
                     <h3 className="text-xl font-semibold mb-2">{svc.title}</h3>
                     <p className="text-sm text-slate-600 max-w-prose mx-auto md:[text-align:justify]">{svc.description}</p>
               </Link>
             ))}
           </div>
+       </div>     
       </section>
 
       {/* Proceso */}
