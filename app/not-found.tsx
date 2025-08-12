@@ -1,4 +1,10 @@
-import { Phone, Mail, Calculator, Home, Search } from "lucide-react";
+import { Phone,
+        Mail,
+        Calculator,
+        Home,
+        Briefcase,
+        BookOpenText,
+       } from "lucide-react";
 import Link from "next/link";
 import {
   Card,
@@ -11,8 +17,8 @@ import {
 export default function NotFound() {
   const quickLinks = [
     { href: "/", label: "Inicio", icon: Home },
-    { href: "/about", label: "Nosotros", icon: Search },
-    { href: "/services", label: "Servicios", icon: Calculator },
+    { href: "/about", label: "Nosotros", icon: BookOpenText },
+    { href: "/services", label: "Servicios", icon: Briefcase },
     { href: "/contact", label: "Contáctanos", icon: Phone },
   ];
 
@@ -117,4 +123,3 @@ export default function NotFound() {
     </div>
   );
 }
-
