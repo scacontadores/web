@@ -122,12 +122,9 @@ export default function ServiciosPage() {
                 href={svc.href}
                 className="p-6 border rounded-lg hover:shadow-md transition-shadow flex flex-col items-center text-center h-full text-slate-900 bg-white"
               >
-                <div className="mb-4">{svc.icon}<div>
+                <div className="mb-4 flex justify-center">{svc.icon}<div>
                     <h3 className="text-xl font-semibold mb-2">{svc.title}</h3>
-                    <p className="text-sm text-slate-600 max-w-prose mx-auto [text-wrap:balance] md:[text-align:justify]">{svc.description}</p>
-                  </div>
-                  {svc.icon}
-                </div>
+                    <p className="text-sm text-slate-600 max-w-prose mx-auto md:[text-align:justify]">{svc.description}</p>
               </Link>
             ))}
           </div>
