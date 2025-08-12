@@ -51,7 +51,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <Calculator className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <FileText className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Contabilidad y obligaciones fiscales</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -67,7 +67,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <TrendingUp className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <MessagesSquare className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Consultoría contable y fiscal</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -83,7 +83,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <Shield className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <FileSearch className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Auditoría fiscal electrónica</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -115,7 +115,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <LineChart className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Asesoría financiera</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -131,7 +131,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <ClipboardCheck className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Auditoría de estados financieros</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -147,7 +147,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <TrendingUp className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Dictamen de enajenación de acciones</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -163,7 +163,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <ShieldCheck className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Dictamen IMSS</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -179,7 +179,7 @@ export default function HomePage() {
               <a className="block h-full">
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
-                    <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <RotateCcw className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <CardTitle>Devolución de impuestos a favor</CardTitle>
                   </CardHeader>
                   <CardContent>
