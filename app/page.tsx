@@ -180,7 +180,7 @@ export default function HomePage() {
                 <Card className="text-center hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
                   <CardHeader>
                     <RotateCcw className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                    <CardTitle>Devolución de impuestos a favor</CardTitle>
+                    <CardTitle>Devolución de IVA</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription>
