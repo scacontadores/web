@@ -19,7 +19,7 @@ const services = [
   {
     slug: "contabilidad",
     title: "Contabilidad y obligaciones fiscales",
-    icon: Calculator,
+    icon: FileText,
     description:
       "Este servicio consiste en elaborar cada mes la contabilidad del Cliente, cumpliendo con ello obligaciones de tipo fiscal y mercantil. Con los datos emanados de la contabilidad se hacen los cálculos y preparación de los formatos fiscales para el cumplimiento de las obligaciones fiscales.",
     faqs: [
@@ -58,7 +58,7 @@ const services = [
   {
     slug: "consultoria",
     title: "Consultoría contable y fiscal",
-    icon: TrendingUp,
+    icon: MessagesSquare,
     description:
       "Supervisamos y acompañamos a tu departamento de contabilidad para garantizar registros confiables, cumplimiento de las NIF y obligaciones fiscales, laborales y societarias. Optimizamos beneficios y tratamientos fiscales, y calculamos mensualmente tus impuestos federales con nuestra plataforma Compliance Fiscal Inteligente (CFI), que usa inteligencia artificial para adaptarse a las necesidades específicas de tu empresa.",
     faqs: [
@@ -97,7 +97,7 @@ const services = [
   {
     slug: "auditoria-fiscal",
     title: "Auditoría fiscal electrónica",
-    icon: Shield,
+    icon: FileSearch,
     description:
       "Revisamos y verificamos al 100% los CFDI emitidos y recibidos por tu empresa —incluyendo ingresos, egresos, complementos de pago, nómina y carta porte— para asegurar su correcta asociación con la contabilidad, cumplimiento de requisitos fiscales y validez ante el SAT. Validamos importes, retenciones, tasas de IVA, deducibilidad de gastos, operaciones vinculadas al objeto social y la existencia de CFDI que puedan corresponder a operaciones inexistentes. También conciliamos la información del SAT con tus registros y detectamos proveedores listados como EFOS en los últimos cinco ejercicios.",
     faqs: [
@@ -169,7 +169,7 @@ const services = [
   {
     slug: "asesoria-financiera",
     title: "Asesoría financiera",
-    icon: Shield,
+    icon: LineChart,
     description:
       "Aplicamos técnicas de análisis financiero para transformar tus datos en información clave que te ayude a entender la situación real de tu empresa y tomar decisiones acertadas. Creamos un modelo personalizado con comparativos de estados financieros, análisis de resultados, balance, flujo de efectivo, capital de trabajo y razones financieras. Además, te acompañamos en reuniones de análisis para identificar tendencias, oportunidades, debilidades y amenazas.",
     faqs: [
@@ -198,7 +198,7 @@ const services = [
   {
     slug: "auditoria-eeff",
     title: "Auditoría de estados financieros",
-    icon: Calculator,
+    icon: ClipboardCheck,
     description:
       "Emitimos una opinión profesional sobre la veracidad de tus estados financieros, brindando seguridad razonable a tu administración y a terceros sobre su confiabilidad para la toma de decisiones operativas, estratégicas o legales. Aplicamos normas internacionales de auditoría y evaluamos el control interno, políticas contables, salvaguarda de activos e integridad empresarial, adaptándonos a las circunstancias de tu empresa.",
     faqs: [
@@ -237,7 +237,7 @@ const services = [
   {
     slug: "dictamen-acciones",
     title: "Dictamen de enajenación de acciones",
-    icon: Calculator,
+    icon: TrendingUp,
     description:
       "Determinamos la utilidad fiscal y el ISR derivado de la venta de acciones o partes sociales realizada por una persona física, emitiendo un dictamen ante el SAT que avala el correcto cálculo y pago del impuesto.",
     faqs: [
@@ -266,7 +266,7 @@ const services = [
   {
     slug: "dictamen-imss",
     title: "Dictamen IMSS",
-    icon: Calculator,
+    icon: ShieldCheck,
     description:
       "Revisamos la afiliación de trabajadores, la integración de salarios para el cálculo de cuotas, nóminas, contratos, registros contables y clasificación de prima de riesgo. Verificamos el cumplimiento de la Ley del IMSS y el RACERF, asegurando que el pago de cuotas obrero patronales sea correcto. Este dictamen, contemplado en el Art. 170 del RACERF, tiene validez legal salvo prueba en contrario, otorgando certeza a la empresa sobre el cumplimiento de sus obligaciones.",
     faqs: [
@@ -305,7 +305,7 @@ const services = [
   {
     slug: "devolucion-iva",
     title: "Devolución de IVA",
-    icon: Calculator,
+    icon: RotateCcw,
     description:
       "Gestionamos ante la autoridad fiscal la devolución de saldos a favor de IVA, ya sea por aplicar tasa 0% en ingresos, pagos indebidos o provisionales en exceso. Revisamos minuciosamente registros contables, CFDI, estados de cuenta y materialidad de operaciones, y elaboramos la documentación requerida para presentar la solicitud formal y dar seguimiento a su resolución.",
     faqs: [
