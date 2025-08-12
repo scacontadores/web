@@ -2,7 +2,23 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calculator, Shield, TrendingUp, Users, CheckCircle, Phone, Mail, MapPin, FileText, MessagesSquare, FileSearch, LineChart, ClipboardCheck, ShieldCheck, RotateCcw } from "lucide-react"
+import {
+  Calculator,
+  Shield,
+  TrendingUp,
+  Users,
+  CheckCircle,
+  Phone,
+  Mail,
+  MapPin,
+  FileText,
+  MessagesSquare,
+  FileSearch,
+  LineChart,
+  ClipboardCheck,
+  ShieldCheck,
+  RotateCcw,
+} from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
