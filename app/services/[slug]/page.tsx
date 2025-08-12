@@ -3,6 +3,13 @@ import {
   TrendingUp,
   Shield,
   Users,
+  FileText,
+  MessagesSquare,
+  FileSearch,
+  LineChart,
+  ClipboardCheck,
+  ShieldCheck,
+  RotateCcw,
 } from "lucide-react"
 import { notFound } from "next/navigation"
 import FAQSection from "@/components/FAQSection"
