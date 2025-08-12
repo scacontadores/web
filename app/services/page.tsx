@@ -7,26 +7,36 @@ import {
   FileText,
   PieChart,
   Building,
-  CreditCard,
-  BookOpen,
-  Target,
+  ShoppingBag,
+  HeartHandshake,
+  Hammer,
+  MessagesSquare,
+  FileSearch,
+  LineChart,
+  ClipboardCheck,
+  ShieldCheck,
+  RotateCcw,
+  Stethoscope,
+  Cpu,
+  Factory,
+  Briefcase,
 } from "lucide-react"
 
 const services = [
   {
-    icon: <Calculator className="h-10 w-10 text-blue-600" />,
+    icon: <FileText className="h-10 w-10 text-blue-600" />,
     title: "Contabilidad y obligaciones fiscales",
     description: "Elaboración de contabilidad mensual del Cliente para el cumplimiento de obligaciones fiscales y mercantiles.",
     href: "/services/contabilidad",
   },
   {
-    icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
+    icon: <MessagesSquare className="h-10 w-10 text-blue-600" />,
     title: "Consultoría contable y fiscal",
     description: "Acompañamiento y supervisión al departamento de contabilidad del Cliente en la ejecución de la misma.",
     href: "/services/consultoria",
   },
   {
-    icon: <Shield className="h-10 w-10 text-blue-600" />,
+    icon: <FileSearch className="h-10 w-10 text-blue-600" />,
     title: "Auditoría fiscal electrónica",
     description: "Revisión y verificación analítica con un alcance total del 100%.",
     href: "/services/auditoria-fiscal",
@@ -38,31 +48,31 @@ const services = [
     href: "/services/nomina",
   },
   {
-    icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
+    icon: <LineChart className="h-10 w-10 text-blue-600" />,
     title: "Asesoría financiera",
     description: "Aplicación de técnicas de análisis financiero con el objetivo de generar conocimiento práctico y valioso.",
     href: "/services/asesoria-financiera",
   },
   {
-    icon: <Shield className="h-10 w-10 text-blue-600" />,
+    icon: <ClipboardCheck className="h-10 w-10 text-blue-600" />,
     title: "Auditoría de estados financieros",
     description: "Opinión profesional acerca de la fiabilidad de los estados financieros de la empresa auditada.",
     href: "/services/auditoria-eeff",
   },
   {
-    icon: <Calculator className="h-10 w-10 text-blue-600" />,
+    icon: <TrendingUp className="h-10 w-10 text-blue-600" />,
     title: "Dictamen de enajenación de acciones",
     description: "Determinación de la utilidad fiscal e ISR derivado de la venta de acciones.",
     href: "/services/dictamen-acciones",
   },
   {
-    icon: <Users className="h-10 w-10 text-blue-600" />,
+    icon: <ShieldCheck className="h-10 w-10 text-blue-600" />,
     title: "Dictamen IMSS",
     description: "Análisis de los movimientos de afiliación de los trabajadores al IMSS.",
     href: "/services/dictamen-imss",
   },
   {
-    icon: <Calculator className="h-10 w-10 text-blue-600" />,
+    icon: <RotateCcw className="h-10 w-10 text-blue-600" />,
     title: "Devolución de IVA",
     description: "Gestión ante la Autoridad Fiscal para la obtención de la devolución de impuestos a favor del Cliente.",
     href: "/services/devolucion-iva",
@@ -70,14 +80,14 @@ const services = [
 ]
 
 const industries = [
-  { name: "Salud", icon: Building },
+  { name: "Salud", icon: Stethoscope },
   { name: "Bienes raíces", icon: Building },
-  { name: "Tecnología", icon: Target },
-  { name: "Manufactura", icon: Building },
-  { name: "Retail", icon: CreditCard },
-  { name: "Servicios profesionales", icon: Users },
-  { name: "Organizaciones sin fines de lucro", icon: BookOpen },
-  { name: "Construcción", icon: Building },
+  { name: "Tecnología", icon: Cpu },
+  { name: "Manufactura", icon: Factory },
+  { name: "Retail", icon: ShoppingBag },
+  { name: "Servicios profesionales", icon: Briefcase },
+  { name: "Organizaciones sin fines de lucro", icon: HeartHandshake },
+  { name: "Construcción", icon: Hammer },
 ]
 
 export default function ServiciosPage() {
