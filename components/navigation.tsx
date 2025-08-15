@@ -44,7 +44,7 @@ export function Navigation() {
               </Link>
             ))}
             <Button className="bg-blue-600 hover:bg-blue-700">
-              <Link href="https://scaportal.azurewebsites.net/login" target="_blank">Inicio de sesión</Link>
+              <Link href="#" target="_blank">Inicio de sesión</Link>
             </Button>
           </nav>
 
