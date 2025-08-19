@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://scacontadores.mx"),  
   title: "SCA Contadores Web",
   description: "Servicios contables profesionales de confianza.",
   icons: { icon: "/favicon.ico" },
