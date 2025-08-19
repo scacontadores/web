@@ -27,7 +27,7 @@ export function Navigation() {
               alt="Logo Contadores SCA"
               className="h-8 w-8 object-contain"
             />
-            <span className="text-xl font-bold text-slate-900">Contadores SCA</span>
+            <span className="text-xl font-bold text-slate-900">SCA Contadores</span>
           </Link>
 
           {/* Desktop Navigation */}
