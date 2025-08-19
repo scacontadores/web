@@ -14,7 +14,7 @@ export function Footer() {
                 alt="Logo Contadores SCA"
                 className="h-8 w-8 object-contain"
               />
-              <span className="text-xl font-bold">Contadores SCA</span>
+              <span className="text-xl font-bold">SCA Contadores</span>
             </div>
             <p className="text-slate-300 mb-4 text-justify">
               Servicios de confianza orientados al crecimiento empresarial mediante una gestión financiera integral y una planificación estratégica eficaz.
@@ -124,7 +124,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
-          <p className="text-slate-300">© {new Date().getFullYear()} Contadores SCA. Derechos reservados.</p>
+          <p className="text-slate-300">© {new Date().getFullYear()} SCA Contadores. Derechos reservados.</p>
         </div>
       </div>
     </footer>
