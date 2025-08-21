@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "SCA Contadores",
     images: [
       {
-        url: "https://www.scacontadores.mx/og-image-v2.png",
+        url: "https://www.scacontadores.mx/og-image.png",
         width: 1200,
         height: 630,
         type: "image/png",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SCA Contadores Web",
     description: "Servicios contables profesionales de confianza.",
-    images: ["https://www.scacontadores.mx/og-image-v2.png"],
+    images: ["https://www.scacontadores.mx/og-image.png"],
   },
 };
 
