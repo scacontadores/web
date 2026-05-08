@@ -356,11 +356,12 @@ export function generateStaticParams() {
 }
 
 interface PageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export default function ServiceDetailPage({ params }: PageProps) {
-  const service = services.find((s) => s.slug === params.slug)
+export default async function ServiceDetailPage({ params }: PageProps) {
+  const { slug } = await params
+  const service = services.find((s) => s.slug === slug)
   if (!service) return notFound()
   const Icon = service.icon
 
