@@ -4,56 +4,200 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --radius: 0.5rem;
-  }
+    /* SCA design system — cobalt + cream */
+    --cobalt: #3D43E0;
+    --cobalt-deep: #2E33C2;
+    --cobalt-ink: #1A1D7A;
+    --cream: #F6F1E8;
+    --cream-soft: #FAF7F1;
+    --cream-deep: #ECE5D5;
+    --ink: #0E0E16;
+    --ink-2: #2A2A3A;
+    --ink-3: #5A5A6E;
+    --ink-4: #9A9AAE;
+    --line: rgba(14, 14, 22, 0.10);
+    --line-soft: rgba(14, 14, 22, 0.06);
+    --shadow-card: 0 1px 0 rgba(14, 14, 22, 0.04), 0 12px 32px -16px rgba(14, 14, 22, 0.10);
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --radius-xl: 32px;
+    --max: 1280px;
+    --gutter: clamp(20px, 4vw, 56px);
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 94.1%;
+    /* shadcn/ui token bridge — bound to the design system above */
+    --background: 40 43% 96%;          /* cream-soft */
+    --foreground: 240 23% 7%;          /* ink */
+    --card: 0 0% 100%;
+    --card-foreground: 240 23% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 23% 7%;
+    --primary: 238 73% 56%;            /* cobalt */
+    --primary-foreground: 40 43% 96%;
+    --secondary: 38 38% 94%;           /* cream */
+    --secondary-foreground: 240 23% 7%;
+    --muted: 38 38% 94%;
+    --muted-foreground: 240 10% 39%;   /* ink-3 */
+    --accent: 38 38% 94%;
+    --accent-foreground: 240 23% 7%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 40 43% 96%;
+    --border: 240 23% 7%;              /* used as hsl(var(--border) / .10) ≈ --line */
+    --input: 240 10% 88%;
+    --ring: 238 73% 56%;
+    --radius: 0.875rem;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+  }
+  section[id] { scroll-margin-top: 80px; }
+}
+
+/* SCA design-system primitives.
+   Use these in any new component to stay on-system. */
+@layer components {
+  .sca-wrap {
+    max-width: var(--max);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  /* Type scale */
+  .eyebrow {
+    font-family: var(--font-mono), ui-monospace, "SF Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+  }
+  .h-display {
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+    font-size: clamp(48px, 7.2vw, 108px);
+    color: var(--ink);
+  }
+  .h-display .serif,
+  .h-section .serif,
+  .serif-italic {
+    font-family: var(--font-serif), Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+  .h-section {
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    font-size: clamp(36px, 4.8vw, 72px);
+    color: var(--ink);
+  }
+  .lede {
+    font-size: clamp(17px, 1.4vw, 21px);
+    line-height: 1.45;
+    color: var(--ink-2);
+    max-width: 56ch;
+    letter-spacing: -0.01em;
+  }
+  .mono {
+    font-family: var(--font-mono), ui-monospace, "SF Mono", monospace;
+    font-feature-settings: "tnum";
+  }
+  .num {
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Pill eyebrow */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    font-family: var(--font-mono), ui-monospace, "SF Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    width: fit-content;
+    white-space: nowrap;
+  }
+  .pill .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--cobalt);
+    display: inline-block;
+  }
+
+  /* Buttons (use alongside or instead of shadcn Button) */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    padding: 0 22px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: -0.005em;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+    white-space: nowrap;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--ink); color: var(--cream-soft); }
+  .btn-primary:hover { background: var(--cobalt); color: white; }
+  .btn-cobalt { background: var(--cobalt); color: white; }
+  .btn-cobalt:hover { background: var(--cobalt-deep); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn-ghost:hover { background: var(--ink); color: var(--cream-soft); border-color: var(--ink); }
+  .btn .arrow { transition: transform .2s ease; }
+  .btn:hover .arrow { transform: translateX(3px); }
+
+  /* Cards */
+  .sca-card {
+    background: white;
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .sca-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card);
+    border-color: var(--line);
+  }
+
+  /* Hero grid backdrop */
+  .hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 30%, transparent 75%);
+    pointer-events: none;
   }
 }

@@ -1,10 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const geistSans = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.scacontadores.mx"),
@@ -45,8 +63,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
-      <body className={inter.className}>
+    <html
+      lang="es"
+      className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable}`}
+    >
+      <body>
         <Navigation />
         <main>{children}</main>
         <Footer />

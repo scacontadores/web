@@ -1,132 +1,119 @@
-import { Calculator, Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-ink text-ink-4">
+      <div className="sca-wrap py-16">
+        <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:gap-16">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center gap-3">
               <img
                 src="/logoSCA.png"
-                alt="Logo Contadores SCA"
-                className="h-8 w-8 object-contain"
+                alt="SCA Contadores"
+                className="h-8 w-8 rounded-md object-contain"
               />
-              <span className="text-xl font-bold">SCA Contadores</span>
+              <span className="text-[16px] font-medium tracking-[-0.02em] text-cream-soft">
+                SCA Contadores
+              </span>
             </div>
-            <p className="text-slate-300 mb-4 text-justify">
-              Servicios de confianza orientados al crecimiento empresarial mediante una gestión financiera integral y una planificación estratégica eficaz.
+            <p className="mt-5 max-w-[44ch] text-[14px] leading-[1.6] text-ink-4">
+              Servicios de confianza orientados al crecimiento empresarial mediante
+              una gestión financiera integral y una planificación estratégica eficaz.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-slate-300 hover:text-white hover:underline transition-colors">
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-slate-300 hover:text-white hover:underline transition-colors">
-                  Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-slate-300 hover:text-white hover:underline transition-colors">
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-slate-300 hover:text-white hover:underline transition-colors">
-                  Contáctanos
-                </Link>
-              </li>
+            <h5 className="mono mb-4 text-[12px] font-medium uppercase tracking-[0.08em] text-cream-soft">
+              Links
+            </h5>
+            <ul className="space-y-1.5">
+              <FooterLink href="/">Inicio</FooterLink>
+              <FooterLink href="/about">Nosotros</FooterLink>
+              <FooterLink href="/services">Servicios</FooterLink>
+              <FooterLink href="/contact">Contáctanos</FooterLink>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Servicios</h3>
-            <ul className="space-y-2 text-slate-300">
-              <li>
-                <Link href="/services/asesoria-financiera" className="hover:text-white hover:underline transition-colors">
-                  Asesoría financiera
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/auditoria-eeff" className="hover:text-white hover:underline transition-colors">
-                  Auditoría de estados financieros
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/auditoria-fiscal" className="hover:text-white hover:underline transition-colors">
-                  Auditoría fiscal electrónica
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/contabilidad" className="hover:text-white hover:underline transition-colors">
-                  Contabilidad y obligaciones fiscales
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/dictamen-acciones" className="hover:text-white hover:underline transition-colors">
-                  Dictamen de enajenación de acciones
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/dictamen-imss" className="hover:text-white hover:underline transition-colors">
-                  Dictamen IMSS
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/nomina" className="hover:text-white hover:underline transition-colors">
-                  Nómina y obligaciones laborales
-                </Link>
-              </li>
+            <h5 className="mono mb-4 text-[12px] font-medium uppercase tracking-[0.08em] text-cream-soft">
+              Servicios
+            </h5>
+            <ul className="space-y-1.5">
+              <FooterLink href="/services/asesoria-financiera">Asesoría financiera</FooterLink>
+              <FooterLink href="/services/auditoria-eeff">Auditoría de estados financieros</FooterLink>
+              <FooterLink href="/services/auditoria-fiscal">Auditoría fiscal electrónica</FooterLink>
+              <FooterLink href="/services/contabilidad">Contabilidad y obligaciones fiscales</FooterLink>
+              <FooterLink href="/services/dictamen-acciones">Dictamen de enajenación de acciones</FooterLink>
+              <FooterLink href="/services/dictamen-imss">Dictamen IMSS</FooterLink>
+              <FooterLink href="/services/nomina">Nómina y obligaciones laborales</FooterLink>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Información de contacto</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-blue-400" />
-                <a href="tel:+526677520080">
-                  <span className="text-slate-300 hover:underline">(667)752-0080</span>                
+            <h5 className="mono mb-4 text-[12px] font-medium uppercase tracking-[0.08em] text-cream-soft">
+              Información de contacto
+            </h5>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3 text-[14px]">
+                <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-cobalt" />
+                <a
+                  href="tel:+526677520080"
+                  className="text-ink-4 transition-colors hover:text-cream-soft"
+                >
+                  (667) 752-0080
                 </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-blue-400" />
-                <a href="mailto:administracion@contadoressca.com">
-                  <span className="text-slate-300 hover:underline">administracion@contadoressca.com</span>
+              </li>
+              <li className="flex items-start gap-3 text-[14px]">
+                <Mail className="mt-0.5 h-4 w-4 flex-shrink-0 text-cobalt" />
+                <a
+                  href="mailto:administracion@contadoressca.com"
+                  className="text-ink-4 transition-colors hover:text-cream-soft"
+                >
+                  administracion@contadoressca.com
                 </a>
-              </div>
-          <div className="flex items-center space-x-3">
-            <MapPin className="h-5 w-5 text-blue-400" />
+              </li>
+              <li className="flex items-start gap-3 text-[14px]">
+                <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-cobalt" />
                 <a
                   href="https://maps.app.goo.gl/4vxYzKCMVJTVPop17"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-300 hover:underline"
+                  className="text-ink-4 transition-colors hover:text-cream-soft"
                 >
-                  Juan José Ríos 378 Pte.<br />
-                  Colonia Jorge Almada<br />
+                  Juan José Ríos 378 Pte.
+                  <br />
+                  Colonia Jorge Almada
+                  <br />
                   Culiacán, Sinaloa
                 </a>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-slate-700 mt-8 pt-8 text-center">
-          <p className="text-slate-300">© {new Date().getFullYear()} SCA Contadores. Derechos reservados.</p>
+        <div className="mono flex flex-wrap items-center justify-between gap-5 pt-8 text-[11px] uppercase tracking-[0.06em] text-ink-4">
+          <span>© {new Date().getFullYear()} SCA Contadores · Culiacán, Sinaloa</span>
+          <span>Derechos reservados</span>
         </div>
       </div>
     </footer>
+  )
+}
+
+function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className="text-[14px] text-ink-4 transition-colors hover:text-cream-soft hover:underline"
+      >
+        {children}
+      </Link>
+    </li>
   )
 }
