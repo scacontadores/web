@@ -18,10 +18,12 @@ export default function FAQSection({ faqs }: { faqs: FAQ[] }) {
       </h2>
       <div className="border-t border-line-soft">
         {faqs.map((faq, idx) => (
-          <div key={idx} className="border-b border-line-soft">
+          <div key={faq.question} className="border-b border-line-soft">
             <button
-              className="flex w-full items-center justify-between gap-4 py-5 text-left focus:outline-none"
+              className="flex w-full items-center justify-between gap-4 py-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-cobalt focus-visible:ring-offset-2 rounded-sm"
               onClick={() => setOpenFAQ(openFAQ === idx ? null : idx)}
+              aria-expanded={openFAQ === idx}
+              aria-controls={`faq-answer-${idx}`}
             >
               <span className="text-[16px] font-medium text-ink">{faq.question}</span>
               <ChevronDown
@@ -31,7 +33,10 @@ export default function FAQSection({ faqs }: { faqs: FAQ[] }) {
               />
             </button>
             {openFAQ === idx && (
-              <p className="mb-5 text-[15px] leading-[1.6] text-ink-2 text-justify">
+              <p
+                id={`faq-answer-${idx}`}
+                className="mb-5 text-[15px] leading-[1.6] text-ink-2 text-justify"
+              >
                 {faq.answer}
               </p>
             )}
