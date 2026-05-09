@@ -1,8 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Calculator, Menu } from "lucide-react"
+import { ArrowRight, Menu } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -17,65 +16,83 @@ export function Navigation() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <img
-              src="/logoSCA.png"
-              alt="Logo Contadores SCA"
-              className="h-8 w-8 object-contain"
-            />
-            <span className="text-xl font-bold text-slate-900">SCA Contadores</span>
+    <header className="sticky top-0 z-50 w-full border-b border-line-soft bg-cream-soft/80 backdrop-blur-md supports-[backdrop-filter]:bg-cream-soft/70">
+      <div className="sca-wrap flex h-[72px] items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/logoSCA.png"
+            alt="SCA Contadores"
+            className="h-9 w-9 rounded-md object-contain"
+          />
+          <div className="leading-tight">
+            <div className="text-[16px] font-semibold tracking-[-0.02em] text-ink">
+              SCA Contadores
+            </div>
+            <div className="mono mt-0.5 text-[10px] uppercase tracking-[0.08em] text-ink-3">
+              Desde 1953
+            </div>
+          </div>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden items-center gap-7 md:flex">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`text-[14px] transition-colors hover:text-cobalt ${
+                pathname === item.href ? "text-cobalt" : "text-ink-2"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
+            className="btn btn-cobalt"
+            style={{ height: 42, fontSize: 14, padding: "0 18px" }}
+          >
+            Agendar
+            <ArrowRight className="arrow h-3 w-3" />
           </Link>
+        </nav>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+        {/* Mobile Navigation */}
+        <Sheet>
+          <SheetTrigger asChild>
+            <button
+              type="button"
+              aria-label="Toggle menu"
+              className="flex h-10 w-10 items-center justify-center rounded-md border border-line text-ink-2 transition hover:bg-ink hover:text-cream-soft md:hidden"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+          </SheetTrigger>
+          <SheetContent side="right" className="bg-cream-soft">
+            <div className="mt-8 flex flex-col gap-5">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`text-lg font-medium transition-colors hover:text-cobalt ${
+                    pathname === item.href ? "text-cobalt" : "text-ink-2"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
               <Link
-                key={item.href}
-                href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  pathname === item.href ? "text-blue-600" : "text-slate-600"
-                }`}
+                href="/contact"
+                className="btn btn-cobalt mt-2"
+                style={{ height: 44, fontSize: 14 }}
               >
-                {item.label}
+                Agendar
+                <ArrowRight className="arrow h-3.5 w-3.5" />
               </Link>
-            ))}
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              <Link href="#">Inicio de sesión</Link>
-            </Button>
-          </nav>
-
-          {/* Mobile Navigation */}
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden bg-transparent">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col space-y-4 mt-8">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`text-lg font-medium transition-colors hover:text-blue-600 ${
-                      pathname === item.href ? "text-blue-600" : "text-slate-600"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-                <Button className="bg-blue-600 hover:bg-blue-700 mt-4">
-                  <Link href="#">Inicio de sesión</Link>
-                </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   )

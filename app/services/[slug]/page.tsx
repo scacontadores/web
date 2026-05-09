@@ -1,21 +1,29 @@
 import {
-  Calculator,
-  TrendingUp,
-  Shield,
-  Users,
   FileText,
   MessagesSquare,
   FileSearch,
+  Users,
   LineChart,
   ClipboardCheck,
+  TrendingUp,
   ShieldCheck,
   RotateCcw,
+  ArrowLeft,
 } from "lucide-react"
 import { notFound } from "next/navigation"
+import Link from "next/link"
 import FAQSection from "@/components/FAQSection"
+import type { ComponentType } from "react"
 
-// --- Datos de servicios ---
-const services = [
+type ServiceData = {
+  slug: string
+  title: string
+  icon: ComponentType<{ className?: string }>
+  description: string
+  faqs: { question: string; answer: string }[]
+}
+
+const services: ServiceData[] = [
   {
     slug: "contabilidad",
     title: "Contabilidad y obligaciones fiscales",
@@ -30,8 +38,7 @@ const services = [
       },
       {
         question: "¿Necesito invertir en equipo o software contable?",
-        answer:
-          "No, todo el equipo y software necesarios son proporcionados por nuestro despacho.",
+        answer: "No, todo el equipo y software necesarios son proporcionados por nuestro despacho.",
       },
       {
         question: "¿Qué pasa si no llevo contabilidad siendo microempresario?",
@@ -52,7 +59,7 @@ const services = [
         question: "¿Asumo alguna responsabilidad laboral por el personal del despacho?",
         answer:
           "No, el servicio es independiente y el personal del despacho atiende también a otros clientes, por lo que no asumes responsabilidades laborales.",
-      },      
+      },
     ],
   },
   {
@@ -91,7 +98,7 @@ const services = [
         question: "¿Qué beneficios obtengo al contratar este servicio?",
         answer:
           "Mayor certeza y confiabilidad en la información contable, cumplimiento oportuno de obligaciones fiscales y aprovechamiento de beneficios legales que optimicen tu carga tributaria.",
-      }, 
+      },
     ],
   },
   {
@@ -103,28 +110,34 @@ const services = [
     faqs: [
       {
         question: "¿Cuáles son las ventajas de contratar este servicio?",
-        answer: "Permite conocer si los CFDI emitidos y recibidos cumplen con el CFF y la RMF, si todas las operaciones registradas están respaldadas, y si existen CFDI no registrados o vinculados con EFOS. Reduce el riesgo de visitas domiciliarias, restricciones al uso del certificado de sello digital y facilita responder oportunamente auditorías fiscales electrónicas.",
+        answer:
+          "Permite conocer si los CFDI emitidos y recibidos cumplen con el CFF y la RMF, si todas las operaciones registradas están respaldadas, y si existen CFDI no registrados o vinculados con EFOS. Reduce el riesgo de visitas domiciliarias, restricciones al uso del certificado de sello digital y facilita responder oportunamente auditorías fiscales electrónicas.",
       },
       {
         question: "¿Cuáles son los reportes o entregables que recibo?",
-        answer: "Un informe detallado con los resultados de la revisión, cuantificación de inconsistencias y sugerencias para corregirlas, acompañado de anexos con la evidencia y soporte de cada procedimiento aplicado.",
+        answer:
+          "Un informe detallado con los resultados de la revisión, cuantificación de inconsistencias y sugerencias para corregirlas, acompañado de anexos con la evidencia y soporte de cada procedimiento aplicado.",
       },
       {
         question: "¿Qué consecuencias tiene emitir o recibir CFDI con deficiencias o no hacerlo estando obligado?",
-        answer: "Puede generar sanciones administrativas, la imposibilidad de deducir fiscalmente o acreditar IVA, e incluso sanciones penales según el Código Fiscal de la Federación.",
+        answer:
+          "Puede generar sanciones administrativas, la imposibilidad de deducir fiscalmente o acreditar IVA, e incluso sanciones penales según el Código Fiscal de la Federación.",
       },
       {
         question: "¿Qué pasa si tengo CFDI emitidos por EFOS y no compruebo la materialidad de la operación?",
-        answer: "La autoridad puede determinar que las erogaciones no sean deducibles, el IVA no acreditable, imponer sanciones, hacer responsables solidarios a socios y administradores, negar subsidios o estímulos, y restringir el certificado de sello digital.",
+        answer:
+          "La autoridad puede determinar que las erogaciones no sean deducibles, el IVA no acreditable, imponer sanciones, hacer responsables solidarios a socios y administradores, negar subsidios o estímulos, y restringir el certificado de sello digital.",
       },
       {
         question: "¿Incluye la conciliación con la información del SAT?",
-        answer: "Sí, comparamos todos los CFDI en el repositorio del SAT con los registros contables, tanto de los emitidos como de los recibidos, para detectar omisiones o inconsistencias.",
+        answer:
+          "Sí, comparamos todos los CFDI en el repositorio del SAT con los registros contables, tanto de los emitidos como de los recibidos, para detectar omisiones o inconsistencias.",
       },
       {
         question: "¿Revisan la deducibilidad de gastos y el cumplimiento de requisitos fiscales?",
-        answer: "Sí, validamos que los conceptos facturados correspondan a la actividad de la empresa y cumplan con las disposiciones fiscales para su deducibilidad y acreditamiento, incluyendo gastos de nómina, mantenimiento, viáticos y más.",
-      },      
+        answer:
+          "Sí, validamos que los conceptos facturados correspondan a la actividad de la empresa y cumplan con las disposiciones fiscales para su deducibilidad y acreditamiento, incluyendo gastos de nómina, mantenimiento, viáticos y más.",
+      },
     ],
   },
   {
@@ -141,8 +154,7 @@ const services = [
       },
       {
         question: "¿Necesito invertir en equipo o software para la nómina?",
-        answer:
-          "No, todo el equipo y software necesarios son proporcionados por nuestro despacho.",
+        answer: "No, todo el equipo y software necesarios son proporcionados por nuestro despacho.",
       },
       {
         question: "¿Por qué contratar este servicio si ya tengo contabilidad o recursos humanos internos?",
@@ -151,19 +163,16 @@ const services = [
       },
       {
         question: "¿Incluye cálculos y comprobantes de vacaciones, aguinaldo, finiquitos y utilidades?",
-        answer:
-          "Sí, todos estos conceptos están incluidos en el servicio.",
+        answer: "Sí, todos estos conceptos están incluidos en el servicio.",
       },
       {
         question: "¿Incluye el diseño e implementación de un plan de previsión social?",
-        answer:
-          "No, este trabajo no está incluido en el costo del servicio.",
+        answer: "No, este trabajo no está incluido en el costo del servicio.",
       },
-       {
+      {
         question: "¿Incluye el timbrado de los recibos de pago?",
-        answer:
-          "Sí, la emisión y timbrado de los recibos de pago a trabajadores está incluida en el servicio.",
-      },     
+        answer: "Sí, la emisión y timbrado de los recibos de pago a trabajadores está incluida en el servicio.",
+      },
     ],
   },
   {
@@ -175,23 +184,28 @@ const services = [
     faqs: [
       {
         question: "¿En qué consiste el servicio de asesoría financiera?",
-        answer: "Analizamos a fondo tu información financiera para brindarte un diagnóstico claro de la situación económica de tu empresa y ayudarte a tomar decisiones oportunas.",
+        answer:
+          "Analizamos a fondo tu información financiera para brindarte un diagnóstico claro de la situación económica de tu empresa y ayudarte a tomar decisiones oportunas.",
       },
       {
         question: "¿Qué tipo de análisis realizan?",
-        answer: "Elaboramos un modelo personalizado que compara y analiza estados financieros, estado de resultados, balance general, flujo de efectivo, capital de trabajo y razones financieras.",
+        answer:
+          "Elaboramos un modelo personalizado que compara y analiza estados financieros, estado de resultados, balance general, flujo de efectivo, capital de trabajo y razones financieras.",
       },
       {
         question: "¿Incluye reuniones para revisar los resultados?",
-        answer: "Sí, te acompañamos en reuniones periódicas para explicar el análisis, detectar tendencias, oportunidades, debilidades y amenazas.",
+        answer:
+          "Sí, te acompañamos en reuniones periódicas para explicar el análisis, detectar tendencias, oportunidades, debilidades y amenazas.",
       },
       {
         question: "¿Se adapta el análisis a las necesidades de mi empresa?",
-        answer: "Sí, el modelo es personalizado según tu estructura, pudiendo incluir estados financieros individuales, combinados o consolidados.",
+        answer:
+          "Sí, el modelo es personalizado según tu estructura, pudiendo incluir estados financieros individuales, combinados o consolidados.",
       },
       {
         question: "¿Este servicio es sólo para empresas grandes?",
-        answer: "No, está diseñado para cualquier empresa que busque comprender mejor su situación financiera y optimizar la toma de decisiones.",
+        answer:
+          "No, está diseñado para cualquier empresa que busque comprender mejor su situación financiera y optimizar la toma de decisiones.",
       },
     ],
   },
@@ -231,7 +245,7 @@ const services = [
         question: "¿Se adapta la auditoría a cada empresa?",
         answer:
           "Sí, el trabajo se ajusta a las circunstancias específicas de cada cliente, considerando sus necesidades, estructura y requerimientos legales o contractuales.",
-      },      
+      },
     ],
   },
   {
@@ -243,8 +257,7 @@ const services = [
     faqs: [
       {
         question: "¿Es obligatorio presentar el dictamen de enajenación de acciones?",
-        answer:
-          "No, solo se presenta si la persona física considera que le conviene hacerlo.",
+        answer: "No, solo se presenta si la persona física considera que le conviene hacerlo.",
       },
       {
         question: "¿Cuándo conviene presentar el dictamen de enajenación de acciones?",
@@ -299,7 +312,7 @@ const services = [
         question: "¿Qué pasa si el IMSS detecta diferencias después del dictamen?",
         answer:
           "El dictamen se presume válido salvo prueba en contrario; si se detectan diferencias, deberán regularizarse conforme a la ley.",
-      }, 
+      },
     ],
   },
   {
@@ -338,57 +351,42 @@ const services = [
   },
 ]
 
-// --- SSG para output: export ---
 export function generateStaticParams() {
   return services.map(({ slug }) => ({ slug }))
 }
 
 interface PageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export default function ServiceDetailPage({ params }: PageProps) {
-  const service = services.find((s) => s.slug === params.slug)
-
+export default async function ServiceDetailPage({ params }: PageProps) {
+  const { slug } = await params
+  const service = services.find((s) => s.slug === slug)
   if (!service) return notFound()
-
   const Icon = service.icon
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          {/* Encabezado */}
-          <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-8 mb-12">
-            <div>
-              <h1 className="text-4xl font-bold text-slate-900 mb-4">
-                {service.title}
-              </h1>
-              <p className="text-lg text-slate-600 max-w-xl text-justify">
-                {service.description}
-              </p>
+    <div className="flex flex-col min-h-screen bg-cream-soft">
+      <section className="py-[clamp(64px,8vw,120px)] bg-cream-soft">
+        <div className="sca-wrap">
+          <div className="max-w-4xl mx-auto">
+            <div className="pill mb-6">
+              <span className="dot" />
+              <span>Servicios</span>
             </div>
-            <Icon className="h-16 w-16 text-blue-600" />
-          </div>
-
-          {/* Sección FAQ (cliente) */}
-          {service.faqs && service.faqs.length > 0 && (
-            <FAQSection faqs={service.faqs} />
-          )}
-
-          {/* Botones */}
-          <div className="mt-12 text-center">
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="/">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md min-w-[160px]">
-                  ← Inicio
-                </button>
-              </a>              
-              <a href="/services">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md min-w-[160px]">
-                  ← Servicios
-                </button>
-              </a>         
+            <div className="flex flex-col gap-8 mb-12 md:flex-row md:items-start md:justify-between">
+              <div>
+                <h1 className="h-section mb-6">{service.title}</h1>
+                <p className="lede">{service.description}</p>
+              </div>
+              <Icon className="h-14 w-14 flex-shrink-0 text-cobalt" />
+            </div>
+            {service.faqs.length > 0 && <FAQSection faqs={service.faqs} />}
+            <div className="mt-12">
+              <Link href="/services" className="btn btn-ghost">
+                <ArrowLeft className="h-4 w-4" />
+                Servicios
+              </Link>
             </div>
           </div>
         </div>
