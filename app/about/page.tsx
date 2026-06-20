@@ -36,9 +36,9 @@ const VALUES: Value[] = [
 
 const STATS = [
   { label: "Años de experiencia", value: "40+" },
-  { label: "Clientes satisfechos", value: "999+" },
+  { label: "Clientes satisfechos", value: "100+" },
   { label: "Staff experto", value: "20" },
-  { label: "Retención de clientes", value: "100%" },
+  { label: "Retención de clientes", value: "99%" },
 ]
 
 export default function AboutPage() {
